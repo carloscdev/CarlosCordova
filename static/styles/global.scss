@@ -1,0 +1,55 @@
+// Fuente - Monserrat 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+// Variables
+@import './variables';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: $color-negro;
+}
+h1 {
+  font-size: $titulo-h1;
+  font-weight: 300;
+  span{
+    font-weight: 700;
+    border-bottom: 4px solid $color-rojo;
+  }
+}
+h2{
+  font-size: $titulo-h2;
+  font-weight: 500;
+}
+h3 {
+  font-size: $titulo-h3;
+  font-weight: 500;
+}
+p{ 
+  font-size: $parrafo-p;
+  font-weight: 300;
+}
+small {
+  font-size: $parrafo-p;
+  font-weight: 500;
+  color: $color-gris;
+}
+a {
+  text-decoration: none;
+  color: $color-negro;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+.contenedor {
+  width: 85%;
+  margin: 0 auto;
+  @media screen and (max-width:768px){
+    width: 90%;
+  }
+}
