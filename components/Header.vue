@@ -61,7 +61,7 @@ export default {
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  // overflow: hidden;
+  overflow: hidden;
   &__scroll {
     position: absolute;
     width: 3%;
