@@ -8,6 +8,7 @@
               href="https://www.linkedin.com/in/carloscdev/"
               target="_blank"
               rel="noreferrer noopener"
+              title="Linkedin @carloscdev"
               ><font-awesome-icon :icon="['fab', 'linkedin-in']"
             /></a>
           </li>
@@ -16,6 +17,7 @@
               href="https://twitter.com/carloscdev"
               target="_blank"
               rel="noreferrer noopener"
+              title="Twitter @carloscdev"
               ><font-awesome-icon :icon="['fab', 'twitter']"
             /></a>
           </li>
@@ -24,6 +26,7 @@
               href="https://www.instagram.com/carlosc.dev/"
               target="_blank"
               rel="noreferrer noopener"
+              title="Instagram @carlosc.dev"
               ><font-awesome-icon :icon="['fab', 'instagram']"
             /></a>
           </li>
@@ -42,16 +45,40 @@
 </template>
 <script>
 export default {
-  name: "Navbar"
+  name: "Navbar",
+  data() {
+    return {
+      navbarOcultar: "navbarOcultar",
+      navbarArriba: "navbarArriba"
+    };
+  },
+  mounted() {
+    this.scrolling();
+  },
+  methods: {
+    scrolling() {
+      document.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active", window.scrollY > 100);
+        navbar.classList.toggle("sombra", window.scrollY > 100);
+      });
+    },
+    closeMenu() {
+      $(".navbar__phone--menu nav").toggleClass(this.navbarArriba);
+    }
+  }
 };
 </script>
 <style lang="scss">
 @import "~/static/styles/global.scss";
 .navbar {
   position: fixed;
+  padding-top: var(--margen-pequeno);
+  z-index: 9;
   top: 0;
   left: 0;
   right: 0;
+  transition: $animacion-media;
   a {
     transition: $animacion-media;
     &:hover {
@@ -59,7 +86,6 @@ export default {
     }
   }
   &__contenedor {
-    padding-top: $margen-pequeno;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -67,8 +93,8 @@ export default {
       ul {
         display: flex;
         a {
-          margin-left: $margen-minimo;
-          font-size: $parrafo-p;
+          margin-left: var(--margen-minimo);
+          font-size: var(--parrafo-p);
         }
       }
     }
@@ -80,8 +106,24 @@ export default {
     }
     &--menu {
       text-align: right;
-      font-size: $parrafo-p;
+      font-size: var(--parrafo-p);
     }
   }
+  @media (max-width: 768px) {
+    &__contenedor {
+      grid-template-columns: repeat(2, 1fr);
+      &--sociales {
+        display: none;
+      }
+      &--logo {
+        text-align: left;
+      }
+    }
+  }
+}
+.active {
+  background-color: $color-blanco;
+  padding-top: var(--margen-minimo);
+  padding-bottom: var(--margen-minimo);
 }
 </style>

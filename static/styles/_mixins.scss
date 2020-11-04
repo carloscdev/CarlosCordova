@@ -1,0 +1,31 @@
+@mixin boton($colorFondo, $colorLetra, $colorFondoHover){
+  background-color: $colorFondo;
+  display: inline-block;
+  color: $colorLetra;
+  padding: 1vw 2vw;
+  border-radius: 10px;
+  transition: $animacion-normal;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span{
+    font-size: calc(var(--parrafo-p) + 5px);
+    margin-right: var(--margen-minimo);
+  }
+  &:hover {
+      background-color: $colorFondoHover;      
+      transform: scale(0.98);
+      color: $colorFondo;
+  }
+  @media screen and(max-width:768px){
+      padding: 3vw 0vw;
+      width: 100%;
+      span{
+        font-size: calc(var(--parrafo-p) + 8px);
+    }
+  }
+}
+.btn-primary {
+  @include boton($color-negro, $color-blanco, $color-blanco);
+}

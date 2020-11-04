@@ -1,17 +1,32 @@
 $color-rojo : #ef0838;
-$color-negro: #232323;
+$color-negro: #1C1C1C;
 $color-gris: #969393;
-
-$margen-grande: 9vw;
-$margen-mediano: 6vw;
-$margen-pequeno: 3vw;
-$margen-minimo: 1vw;
-
-$titulo-h1: calc(1rem + 4.5vw);
-$titulo-h2: calc(1rem + 1.8vw);
-$titulo-h3: calc(1rem + 1vw);
-$parrafo-p: calc(1rem + 0.3vw);
+$color-humo: #cfcfcf;
+$color-blanco: white;
 
 $animacion-rapida: all 100ms ease;
 $animacion-media: all 300ms ease;
 $animacion-normal: all 500ms ease;
+
+:root {
+  --margen-grande: 9vw;
+  --margen-mediano: 6vw;
+  --margen-pequeno: 3vw;
+  --margen-minimo: 1vw;
+
+  --titulo-h1: calc(1rem + 4.5vw);
+  --titulo-h2: calc(1rem + 2vw);
+  --titulo-h3: calc(1rem + 1vw);
+  --parrafo-p: calc(1rem + 0.3vw);
+  @media (max-width: 768px){
+    --margen-grande: 12vw;
+    --margen-mediano: 9vw;
+    --margen-pequeno: 6vw;
+    --margen-minimo: 3vw;
+  
+    --titulo-h1: calc(1.5rem + 10vw);
+    --titulo-h2: calc(1.5rem + 2vw);
+    --titulo-h3: calc(1.3rem + 1vw);
+    --parrafo-p: calc(1rem + 0.5vw);
+  }
+}

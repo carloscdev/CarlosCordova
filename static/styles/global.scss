@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 // Variables
 @import './variables';
+// Mixins
+@import './mixins';
+// Animaciones
+@import './animations';
 
 *{
   margin: 0;
@@ -11,8 +15,11 @@ body{
   font-family: 'Montserrat', sans-serif;
   color: $color-negro;
 }
+.rojo {
+  border-bottom: 4px solid $color-rojo;
+}
 h1 {
-  font-size: $titulo-h1;
+  font-size: var(--titulo-h1);
   font-weight: 300;
   span{
     font-weight: 700;
@@ -20,19 +27,21 @@ h1 {
   }
 }
 h2{
-  font-size: $titulo-h2;
-  font-weight: 500;
+  font-size: var(--titulo-h2);
+  font-weight: 700;
+  padding-bottom: var(--margen-pequeno);
 }
 h3 {
-  font-size: $titulo-h3;
+  font-size: var(--titulo-h3);
   font-weight: 500;
+  padding-bottom: var(--margen-pequeno);
 }
 p{ 
-  font-size: $parrafo-p;
+  font-size: var(--parrafo-p);
   font-weight: 300;
 }
 small {
-  font-size: $parrafo-p;
+  font-size: var(--parrafo-p);
   font-weight: 500;
   color: $color-gris;
 }
@@ -42,14 +51,24 @@ a {
 }
 li {
   list-style: none;
+  font-weight: 300;
 }
 img {
   max-width: 100%;
 }
 .contenedor {
   width: 85%;
-  margin: 0 auto;
+  margin: 0 auto;  
   @media screen and (max-width:768px){
-    width: 90%;
-  }
+    width: 80%;
+  } 
+}
+.espacio {
+  padding-top: var(--margen-mediano);
+  padding-bottom: var(--margen-mediano);
+}
+.sombra {
+  -webkit-box-shadow: -10px 10px 14px -5px rgba(0,0,0,0.12);
+  -moz-box-shadow: -10px 10px 14px -5px rgba(0,0,0,0.12);
+  box-shadow: -10px 10px 14px -5px rgba(0,0,0,0.12);
 }
