@@ -18,6 +18,9 @@ body{
 .rojo {
   border-bottom: 4px solid $color-rojo;
 }
+.color-rojo {
+  color: $color-rojo;
+}
 h1 {
   font-size: var(--titulo-h1);
   font-weight: 300;
@@ -48,6 +51,7 @@ small {
 a {
   text-decoration: none;
   color: $color-negro;
+  cursor: pointer;
 }
 li {
   list-style: none;

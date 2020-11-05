@@ -39,6 +39,26 @@
       </figure>
       <div class="navbar__contenedor--menu">
         <a href="#"><font-awesome-icon :icon="['fas', 'bars']"/></a>
+        <a href="#"><font-awesome-icon :icon="['fas', 'times']"/></a>
+      </div>
+    </div>
+    <div class="navbar__completo">
+      <div class="navbar__completo--menu">
+        <div class="navbar__completo--item">
+          <a href="#">
+            <font-awesome-icon class="menuIcon" :icon="['fas', 'user']" />
+          </a>
+        </div>
+        <div class="navbar__completo--item">
+          <a href="#">
+            <font-awesome-icon class="menuIcon" :icon="['fas', 'envelope']" />
+          </a>
+        </div>
+        <div class="navbar__completo--item">
+          <a href="#">
+            <font-awesome-icon class="menuIcon" :icon="['fas', 'gamepad']" />
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -70,7 +90,7 @@ export default {
 };
 </script>
 <style lang="scss">
-@import "~/static/styles/global.scss";
+@import "~/static/styles/_variables";
 .navbar {
   position: fixed;
   padding-top: var(--margen-pequeno);
@@ -108,6 +128,16 @@ export default {
       text-align: right;
       font-size: var(--parrafo-p);
     }
+  }
+  &__completo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
   }
   @media (max-width: 768px) {
     &__contenedor {

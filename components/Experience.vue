@@ -6,7 +6,10 @@
         data-aos="fade-right"
         data-aos-easing="linear"
       >
-        <h3><span class="number">01.</span> Experience</h3>
+        <h3>
+          <span class="number">01.</span> Experience
+          <span class="color-rojo">*</span>
+        </h3>
         <p>
           + 2 years of experience as a front-end developer, I also have some
           experience as a backend.
@@ -18,7 +21,10 @@
         data-aos="fade-right"
         data-aos-easing="linear"
       >
-        <h3><span class="number">02.</span> Projects</h3>
+        <h3>
+          <span class="number">02.</span> Projects
+          <span class="color-rojo">*</span>
+        </h3>
         <p>
           I worked on many projects, for different parts of Peru (Lima,
           Pucallpa, Huancayo).
@@ -30,7 +36,10 @@
         data-aos="fade-right"
         data-aos-easing="linear"
       >
-        <h3><span class="number">03.</span> Hobbies</h3>
+        <h3>
+          <span class="number">03.</span> Hobbies
+          <span class="color-rojo">*</span>
+        </h3>
         <p>
           I practice capoeira for more than 5 years, I belong to the Cordão de
           Ouro group.
@@ -46,7 +55,7 @@ export default {
 };
 </script>
 <style lang="scss">
-@import "~/static/styles/global.scss";
+@import "~/static/styles/_variables";
 .experience {
   overflow: hidden;
   min-height: 500px;

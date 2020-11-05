@@ -17,346 +17,47 @@
         paginationActiveColor="#ef0838"
         class="projects__carrusel"
       >
-        <slide>
+        <slide v-for="project in projects" :key="project.id">
           <div class="projects__slider contenedor">
             <div
               class="projects__slider--imagen"
               data-aos="fade-right"
               data-aos-easing="linear"
             >
-              <img
-                src="../assets/img/projects/zosma-new.png"
-                alt="Zosma Team"
-              />
+              <img :src="project.image" :alt="project.title" />
             </div>
             <div
               class="projects__slider--texto"
               data-aos="fade-up"
               data-aos-easing="linear"
             >
-              <h3>Zosma Team</h3>
+              <h3>{{project.title}}</h3>
               <ul>
                 <li>
                   <font-awesome-icon
                     class="icon"
                     :icon="['fas', 'asterisk']"
-                  />Website with Nuxt Js - Lottie Js
+                  />
+                  {{project.description}}
                 </li>
                 <li>
                   <font-awesome-icon
                     class="icon"
                     :icon="['fas', 'calendar-day']"
-                  />Oct - 2020
+                  />{{project.data}}
                 </li>
                 <li>
                   <font-awesome-icon
                     class="icon"
                     :icon="['fas', 'map-marker-alt']"
-                  />Huancayo - Perú
+                  />{{project.place}}
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noreferrer noopener">
+                  <a :href="project.site" target="_blank" rel="noreferrer noopener">
                     <font-awesome-icon
                       class="icon"
                       :icon="['fas', 'link']"
                     />Visit Website
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </slide>
-        <slide>
-          <div class="projects__slider contenedor">
-            <div
-              class="projects__slider--imagen"
-              data-aos="fade-right"
-              data-aos-easing="linear"
-            >
-              <img src="../assets/img/projects/upc-app.png" alt="UPC App" />
-            </div>
-            <div
-              class="projects__slider--texto"
-              data-aos="fade-up"
-              data-aos-easing="linear"
-            >
-              <h3>UPC</h3>
-              <ul>
-                <li>
-                  <font-awesome-icon
-                    class="icon"
-                    :icon="['fas', 'asterisk']"
-                  />Landing Page with Bootstrap - Js
-                </li>
-                <li></li>
-                <li>
-                  <font-awesome-icon
-                    class="icon"
-                    :icon="['fas', 'calendar-day']"
-                  />Oct - 2020
-                </li>
-                <li>
-                  <font-awesome-icon
-                    class="icon"
-                    :icon="['fas', 'map-marker-alt']"
-                  />
-                  Lima - Perú
-                </li>
-                <li>
-                  <a href="#" target="_blank" rel="noreferrer noopener">
-                    <font-awesome-icon class="icon" :icon="['fas', 'link']" />
-                    Visit Website
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </slide>
-        <slide>
-          <div class="projects__slider contenedor">
-            <div
-              class="projects__slider--imagen"
-              data-aos="fade-right"
-              data-aos-easing="linear"
-            >
-              <img
-                src="../assets/img/projects/portafolio-dark.png"
-                alt="Portfolio Dark"
-              />
-            </div>
-            <div
-              class="projects__slider--texto"
-              data-aos="fade-up"
-              data-aos-easing="linear"
-            >
-              <h3>Portfolio Dark</h3>
-              <ul>
-                <li>
-                  <font-awesome-icon
-                    class="icon"
-                    :icon="['fas', 'asterisk']"
-                  />Website with Nuxt Js - Graphql
-                </li>
-                <li></li>
-                <li>
-                  <font-awesome-icon
-                    class="icon"
-                    :icon="['fas', 'calendar-day']"
-                  />Sep - 2020
-                </li>
-                <li>
-                  <font-awesome-icon
-                    class="icon"
-                    :icon="['fas', 'map-marker-alt']"
-                  />
-                  Lima - Perú
-                </li>
-                <li>
-                  <a href="#" target="_blank" rel="noreferrer noopener">
-                    <font-awesome-icon class="icon" :icon="['fas', 'link']" />
-                    Visit Website
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </slide>
-        <slide>
-          <div class="projects__slider contenedor">
-            <div
-              class="projects__slider--imagen"
-              data-aos="fade-right"
-              data-aos-easing="linear"
-            >
-              <img
-                src="../assets/img/projects/texas-club.png"
-                alt="Texas Club"
-              />
-            </div>
-            <div
-              class="projects__slider--texto"
-              data-aos="fade-up"
-              data-aos-easing="linear"
-            >
-              <h3>Texas Club</h3>
-              <ul>
-                <li>
-                  <font-awesome-icon
-                    class="icon"
-                    :icon="['fas', 'asterisk']"
-                  />Landing Page with Nuxt Js
-                </li>
-                <li></li>
-                <li>
-                  <font-awesome-icon
-                    class="icon"
-                    :icon="['fas', 'calendar-day']"
-                  />Sep - 2020
-                </li>
-                <li>
-                  <font-awesome-icon
-                    class="icon"
-                    :icon="['fas', 'map-marker-alt']"
-                  />
-                  Lima - Perú
-                </li>
-                <li>
-                  <a href="#" target="_blank" rel="noreferrer noopener">
-                    <font-awesome-icon class="icon" :icon="['fas', 'link']" />
-                    Visit Website
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </slide>
-        <slide>
-          <div class="projects__slider contenedor">
-            <div
-              class="projects__slider--imagen"
-              data-aos="fade-right"
-              data-aos-easing="linear"
-            >
-              <img src="../assets/img/projects/softaki.png" alt="Softaki" />
-            </div>
-            <div
-              class="projects__slider--texto"
-              data-aos="fade-up"
-              data-aos-easing="linear"
-            >
-              <h3>Tienda Softaki</h3>
-              <ul>
-                <li>
-                  <font-awesome-icon
-                    class="icon"
-                    :icon="['fas', 'asterisk']"
-                  />Landing Page with Nuxt Js - Graphql
-                </li>
-                <li></li>
-                <li>
-                  <font-awesome-icon
-                    class="icon"
-                    :icon="['fas', 'calendar-day']"
-                  />Aug - 2020
-                </li>
-                <li>
-                  <font-awesome-icon
-                    class="icon"
-                    :icon="['fas', 'map-marker-alt']"
-                  />
-                  Lima - Perú
-                </li>
-                <li>
-                  <a
-                    href="https://tiendavirtual.softaki.com/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <font-awesome-icon class="icon" :icon="['fas', 'link']" />
-                    Visit Website
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </slide>
-        <slide>
-          <div class="projects__slider contenedor">
-            <div
-              class="projects__slider--imagen"
-              data-aos="fade-right"
-              data-aos-easing="linear"
-            >
-              <img src="../assets/img/projects/vida-dent.png" alt="Vida Dent" />
-            </div>
-            <div
-              class="projects__slider--texto"
-              data-aos="fade-up"
-              data-aos-easing="linear"
-            >
-              <h3>Vida Dent</h3>
-              <ul>
-                <li>
-                  <font-awesome-icon
-                    class="icon"
-                    :icon="['fas', 'asterisk']"
-                  />Website with Php - MySql
-                </li>
-                <li></li>
-                <li>
-                  <font-awesome-icon
-                    class="icon"
-                    :icon="['fas', 'calendar-day']"
-                  />Jul - 2020
-                </li>
-                <li>
-                  <font-awesome-icon
-                    class="icon"
-                    :icon="['fas', 'map-marker-alt']"
-                  />
-                  Pucallpa - Perú
-                </li>
-                <li>
-                  <a
-                    href="https://cdvidadent.com/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <font-awesome-icon class="icon" :icon="['fas', 'link']" />
-                    Visit Website
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </slide>
-        <slide>
-          <div class="projects__slider contenedor">
-            <div
-              class="projects__slider--imagen"
-              data-aos="fade-right"
-              data-aos-easing="linear"
-            >
-              <img
-                src="../assets/img/projects/zosma-old.png"
-                alt="Zosma Team"
-              />
-            </div>
-            <div
-              class="projects__slider--texto"
-              data-aos="fade-up"
-              data-aos-easing="linear"
-            >
-              <h3>Zosma Team</h3>
-              <ul>
-                <li>
-                  <font-awesome-icon
-                    class="icon"
-                    :icon="['fas', 'asterisk']"
-                  />Landing Page with Html5 - Css3 - Js
-                </li>
-                <li></li>
-                <li>
-                  <font-awesome-icon
-                    class="icon"
-                    :icon="['fas', 'calendar-day']"
-                  />Apr - 2020
-                </li>
-                <li>
-                  <font-awesome-icon
-                    class="icon"
-                    :icon="['fas', 'map-marker-alt']"
-                  />
-                  Huancayo - Perú
-                </li>
-                <li>
-                  <a
-                    href="https://cdvidadent.com/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <font-awesome-icon class="icon" :icon="['fas', 'link']" />
-                    Visit Website
                   </a>
                 </li>
               </ul>
@@ -372,7 +73,74 @@ export default {
   name: "Projects",
   data() {
     return {
-      showCarousel: false
+      showCarousel: false,
+      imgPreUrl: "../assets/img/projects/",
+      projects: [
+        {
+          id: "1",
+          title: "Zosma Team",
+          image: "https://i.postimg.cc/hP8xbK0b/zosma-new.png",
+          site: "https://zosma.pe",
+          data: "Oct - 2020",
+          place: "Huancayo - Perú",
+          description: "Website with Nuxt Js - Lottie Js"
+        },
+        {
+          id: "2",
+          title: "UPC - App",
+          image: "https://i.postimg.cc/MZQ1H7ML/upc-app.png",
+          site: "https://miupcapp.vercel.app/",
+          data: "Oct - 2020",
+          place: "Lima - Perú",
+          description: "Landing Page with Bootstrap - Js"
+        },
+        {
+          id: "3",
+          title: "Portfolio Dark",
+          image: "https://i.postimg.cc/X76dCr9Y/portafolio-dark.png",
+          site: "https://portfoliodark.herokuapp.com/",
+          data: "Sep - 2020",
+          place: "Lima - Perú",
+          description: "Website with Nuxt Js - Graphql"
+        },
+        {
+          id: "4",
+          title: "Texas Club",
+          image: "https://i.postimg.cc/x1tzhghX/texas-club.png",
+          site: "https://rocky-temple-75599.herokuapp.com/",
+          data: "Sep - 2020",
+          place: "Lima - Perú",
+          description: "Landing Page with Nuxt Js"
+        },
+        {
+          id: "5",
+          title: "Softaki Tienda",
+          image: "https://i.postimg.cc/Ssw8Vs5V/softaki.png",
+          site: "https://tiendavirtual.softaki.com/",
+          data: "Aug - 2020",
+          place: "Lima - Perú",
+          description: "Landing Page with Nuxt Js - Graphql"
+        },
+        {
+          id: "6",
+          title: "Vida Dent",
+          image: "https://i.postimg.cc/Dw2GxRjV/vida-dent.png",
+          site: "https://cdvidadent.com/",
+          data: "Jul - 2020",
+          place: "Pucallpa - Perú",
+          description: "Website with PHP - MySql"
+        },
+                {
+          id: "7",
+          title: "Zosma Team",
+          image: "https://i.postimg.cc/wvtLhJW7/zosma-old.png",
+          site: "https://zosma.netlify.app/",
+          data: "Apr - 2020",
+          place: "Huancayo - Perú",
+          description: "Landing Page with Html - Css - Js"
+        }
+        
+      ]
     };
   },
   mounted() {
@@ -382,7 +150,7 @@ export default {
 };
 </script>
 <style lang="scss">
-@import "~/static/styles/global.scss";
+@import "~/static/styles/_variables";
 .projects {
   background-image: url("../assets/img/bg-3.png");
   background-size: cover;
@@ -400,6 +168,7 @@ export default {
   }
   &__carrusel {
     margin-top: var(--margen-pequeno);
+    cursor: w-resize;
   }
   &__slider {
     display: grid;
