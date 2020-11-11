@@ -26,26 +26,7 @@ export default {
     About,
     Experience,
     Projects
-  },
-  head: {
-    title: "Carlos C. | Front-end",
-    meta: [
-      {
-        hid: "description",
-        name: "description",
-        content: "Front-end Developer"
-      }
-    ],
-    noscript: [{ innerHTML: "Body No Scripts", body: true }]
-    /*
-      script: [
-      { src: "/head.js" },
-      // Supported since 1.0
-      { src: "/body.js", body: true },
-      { src: "/defer.js", defer: "" }
-    ]
-    */
-  },
+  }, 
 
   mounted() {
     // Barra de progreso de carga
