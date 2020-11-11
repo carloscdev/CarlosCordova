@@ -194,10 +194,11 @@ export default {
   height: 2vw !important;
   outline: none !important;
   @media (max-width: 768px) {
-    .VueCarousel-dot {
+   
       width: 5vw !important;
       height: 5vw !important;
-    }
+      padding: 2vw !important;
+
   }
 }
 </style>

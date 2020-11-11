@@ -38,28 +38,28 @@
         /></nuxt-link>
       </figure>
       <div class="navbar__contenedor--menu">
-        <a href="#"><font-awesome-icon :icon="['fas', 'bars']"/></a>
-        <a href="#"><font-awesome-icon :icon="['fas', 'times']"/></a>
+        <a @click="closeMenu"><font-awesome-icon :icon="['fas', 'bars']"/></a>        
       </div>
     </div>
-    <div class="navbar__completo">
-      <div class="navbar__completo--menu">
-        <div class="navbar__completo--item">
-          <a href="#">
-            <font-awesome-icon class="menuIcon" :icon="['fas', 'user']" />
-          </a>
-        </div>
-        <div class="navbar__completo--item">
-          <a href="#">
-            <font-awesome-icon class="menuIcon" :icon="['fas', 'envelope']" />
-          </a>
-        </div>
-        <div class="navbar__completo--item">
-          <a href="#">
-            <font-awesome-icon class="menuIcon" :icon="['fas', 'gamepad']" />
-          </a>
-        </div>
-      </div>
+    <div class="navbar__completo" :class="navbarActive ? 'navbar__active' : ''">
+      <div class="close" @click="closeMenu" v-if="navbarActive"><font-awesome-icon :icon="['fas', 'times']"/></div>
+      <ul v-if="navbarActive">        
+        <li @click="closeMenu">
+          <nuxt-link to="/">
+            <div class="itemNav">Home <!-- <span class="color-rojo">*</span> --></div>
+          </nuxt-link>
+        </li>
+        <li @click="closeMenu">
+          <nuxt-link to="/about">
+            <div class="itemNav">About</div>
+          </nuxt-link>
+        </li>
+        <li @click="closeMenu">
+          <nuxt-link to="/">
+            <div class="itemNav">Games</div>
+          </nuxt-link>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -68,8 +68,8 @@ export default {
   name: "Navbar",
   data() {
     return {
-      navbarOcultar: "navbarOcultar",
-      navbarArriba: "navbarArriba"
+      navbarArriba: "navbarArriba",     
+      navbarActive: false
     };
   },
   mounted() {
@@ -83,8 +83,8 @@ export default {
         navbar.classList.toggle("sombra", window.scrollY > 100);
       });
     },
-    closeMenu() {
-      $(".navbar__phone--menu nav").toggleClass(this.navbarArriba);
+    closeMenu(){
+      this.navbarActive = !this.navbarActive
     }
   }
 };
@@ -128,26 +128,70 @@ export default {
       text-align: right;
       font-size: var(--parrafo-p);
     }
-  }
-  &__completo {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-  }
-  @media (max-width: 768px) {
-    &__contenedor {
+    @media (max-width: 768px){
       grid-template-columns: repeat(2, 1fr);
       &--sociales {
         display: none;
       }
-      &--logo {
+      &--logo{
         text-align: left;
       }
+    }
+  }
+  &__completo {
+    position: absolute;
+    min-height: 100vh;
+    background-color: $color-negro;
+    top: 0;
+    right: 0;
+    width: 0;
+    color: $color-blanco;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: $animacion-normal;
+    .close{
+      position: absolute;
+      top: 5vw;
+      right: 5vw;
+      font-size:var(--titulo-h3);
+      cursor: pointer;
+      transition: $animacion-normal;
+      &:hover {
+        color: $color-rojo;
+      }
+    }
+    ul{
+      transition: $animacion-normal;
+    }
+    li {
+      a {
+        color: $color-blanco;
+        font-size: calc(var(--titulo-h1) + 0.2vw);
+        font-weight: 500;
+        &:hover {
+          color: $color-blanco;
+        }
+      }
+      .itemNav {
+        position: relative;
+        &:before {
+          content: "";
+          display: block;
+          width: 10%;
+          height: 10px;
+          background-color: $color-rojo;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          transition: $animacion-normal;
+        }
+        &:hover:before {
+          width: 100%;
+        }
+      }
+      margin-bottom: var(--margen-pequeno);
     }
   }
 }
@@ -155,5 +199,8 @@ export default {
   background-color: $color-blanco;
   padding-top: var(--margen-minimo);
   padding-bottom: var(--margen-minimo);
+}
+.navbar__active {
+  width: 100%;
 }
 </style>

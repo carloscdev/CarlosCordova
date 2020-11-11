@@ -24,7 +24,11 @@ export default {
         content: process.env.npm_package_description || ""
       }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    script: [{
+      src: 'https://www.googletagmanager.com/gtag/js?id=UA-178576561-1',
+      async: true
+    }]
   },
   /*
    ** Global CSS
@@ -52,7 +56,14 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ["@nuxtjs/fontawesome"],
+  buildModules: [
+    "@nuxtjs/fontawesome",
+    ['@nuxtjs/google-analytics',
+      {
+        id: 'UA-178576561-1'
+      }
+    ]
+  ],
   /*
    ** Nuxt.js modules
    */

@@ -5,6 +5,7 @@
         class="experience__contenedor--lista"
         data-aos="fade-right"
         data-aos-easing="linear"
+        data-aos-duration="500"
       >
         <h3>
           <span class="number">01.</span> Experience
@@ -20,6 +21,7 @@
         class="experience__contenedor--lista"
         data-aos="fade-right"
         data-aos-easing="linear"
+        data-aos-duration="1000"
       >
         <h3>
           <span class="number">02.</span> Projects
@@ -35,6 +37,7 @@
         class="experience__contenedor--lista"
         data-aos="fade-right"
         data-aos-easing="linear"
+        data-aos-duration="1500"
       >
         <h3>
           <span class="number">03.</span> Hobbies
@@ -58,7 +61,7 @@ export default {
 @import "~/static/styles/_variables";
 .experience {
   overflow: hidden;
-  min-height: 500px;
+  min-height: 400px;
   position: relative;
   display: flex;
   align-items: center;
