@@ -14,13 +14,7 @@ export default {
   head() {
     return {      
       title: "Carlos C. | Front-end",
-      noscript: [{ innerHTML: "Body No Scripts", body: true }],
-      script: [
-        {
-          src: "https://www.googletagmanager.com/ns.html?id=UA-178576561-1",
-          async: true,
-        },       
-      ],
+      noscript: [{ innerHTML: "Body No Scripts", body: true }],      
       meta: [
         {
           hid: "description",

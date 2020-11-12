@@ -3,7 +3,7 @@ export const appConfig = {
   logo: 'https://i.postimg.cc/mrdTsWqZ/Perfil.png',
   logoWhatsapp: 'https://i.postimg.cc/mrdTsWqZ/Perfil.png',
   description: 'Front-end Developer',
-  title: 'Carlos C. Dev - Front-end Developer',
+  title: 'Carlos C. Dev',
   urlOficial: 'https://carlosc.herokuapp.com',
   type: ''
 }

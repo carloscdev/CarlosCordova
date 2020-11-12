@@ -12,3 +12,8 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+.aboutPage {
+  padding-top: var(--margen-grande);
+}
+</style>

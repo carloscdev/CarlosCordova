@@ -98,7 +98,7 @@ export default {
           id: "3",
           title: "Portfolio Dark",
           image: "https://i.postimg.cc/X76dCr9Y/portafolio-dark.png",
-          site: "https://portfoliodark.herokuapp.com/",
+          site: "https://ernesto.softaki.com/",
           data: "Sep - 2020",
           place: "Lima - Perú",
           description: "Website with Nuxt Js - Graphql"
@@ -193,12 +193,10 @@ export default {
   width: 2vw !important;
   height: 2vw !important;
   outline: none !important;
-  @media (max-width: 768px) {
-   
+  @media (max-width: 768px) {   
       width: 5vw !important;
       height: 5vw !important;
       padding: 2vw !important;
-
   }
 }
 </style>

@@ -30,6 +30,15 @@
               ><font-awesome-icon :icon="['fab', 'instagram']"
             /></a>
           </li>
+          <li>
+            <a
+              href="https://youtube.com/user/djdarkhohuancayoperu"
+              target="_blank"
+              rel="noreferrer noopener"
+              title="Youtube"
+              ><font-awesome-icon :icon="['fab', 'youtube']"
+            /></a>
+          </li>
         </ul>
       </div>
       <figure class="navbar__contenedor--logo">
