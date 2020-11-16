@@ -28,7 +28,7 @@
               data-aos="fade-right"
               data-aos-easing="linear"
             >
-              <img width="100%" :src="project.image" :alt="project.title" />
+              <img :src="project.image" :alt="project.title" />
             </div>
             <div
               class="projects__slider--texto"

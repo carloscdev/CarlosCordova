@@ -25,7 +25,6 @@
       </div>
       <div class="about__contenedor--image">
         <img
-          width="100%"
           data-aos="fade-left"
           data-aos-easing="linear"
           class="me sombra"

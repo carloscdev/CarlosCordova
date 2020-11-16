@@ -20,7 +20,6 @@
           class="aboutImg animationLeft imgStatic"
           src="../assets/img/person.webp"
           alt="Person with Laptop"
-          width="100%"
         />
       </div>
       <div class="header__contenedor--texto animationRight">

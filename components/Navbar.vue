@@ -43,7 +43,7 @@
       </div>
       <figure class="navbar__contenedor--logo">
         <nuxt-link to="/"
-          ><img width="100%" src="../assets/img/Abr.webp" alt="CCDEV LOGO"
+          ><img src="../assets/img/Abr.webp" alt="CCDEV LOGO"
         /></nuxt-link>
       </figure>
       <div class="navbar__contenedor--menu">
