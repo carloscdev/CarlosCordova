@@ -94,7 +94,7 @@ export default {
           id: "2",
           title: "UPC - App",
           image: "https://i.ibb.co/5xQjsJH/upc-app.webp",
-          site: "https://miupcapp.vercel.app/",
+          site: "https://miupcapp.vercel.app",
           data: "Oct - 2020",
           place: "Lima - Perú",
           description: "Landing Page with Bootstrap - Js"
@@ -103,7 +103,7 @@ export default {
           id: "3",
           title: "Portfolio Dark",
           image: "https://i.ibb.co/tY4hhgR/portafolio-dark.webp",
-          site: "https://ernesto.softaki.com/",
+          site: "https://ernesto.softaki.com",
           data: "Sep - 2020",
           place: "Lima - Perú",
           description: "Website with Nuxt Js - Graphql"
@@ -112,7 +112,7 @@ export default {
           id: "4",
           title: "Texas Club",
           image: "https://i.ibb.co/MDJ5jJh/texas-club.webp",
-          site: "https://rocky-temple-75599.herokuapp.com/",
+          site: "https://rocky-temple-75599.herokuapp.com",
           data: "Sep - 2020",
           place: "Lima - Perú",
           description: "Landing Page with Nuxt Js"
@@ -121,7 +121,7 @@ export default {
           id: "5",
           title: "Softaki Tienda",
           image: "https://i.ibb.co/zr2p3dg/softaki.webp",
-          site: "https://tiendavirtual.softaki.com/",
+          site: "https://tiendavirtual.softaki.com",
           data: "Aug - 2020",
           place: "Lima - Perú",
           description: "Landing Page with Nuxt Js - Graphql"
@@ -130,7 +130,7 @@ export default {
           id: "6",
           title: "Vida Dent",
           image: "https://i.ibb.co/qR23Zm3/vida-dent.webp",
-          site: "https://cdvidadent.com/",
+          site: "https://cdvidadent.com",
           data: "Jul - 2020",
           place: "Pucallpa - Perú",
           description: "Website with PHP - MySql"
@@ -139,7 +139,7 @@ export default {
           id: "7",
           title: "Zosma Team",
           image: "https://i.ibb.co/BK69mqG/zosma-old.webp",
-          site: "https://zosma.netlify.app/",
+          site: "https://zosma.netlify.app",
           data: "Apr - 2020",
           place: "Huancayo - Perú",
           description: "Landing Page with Html - Css - Js"
