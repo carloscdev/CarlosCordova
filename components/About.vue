@@ -25,18 +25,9 @@
       </div>
       <div class="about__contenedor--image">
         <img
-          data-aos="fade-up"
-          data-aos-easing="linear"
-          data-aos-duration="1000"
-          class="bg-2"
-          width="500px"
-          src="../assets/img/bg-2.webp"
-          alt="Fondo"
-        />
-        <img
+          width="100%"
           data-aos="fade-left"
           data-aos-easing="linear"
-          width="500px"
           class="me sombra"
           src="../assets/img/me.webp"
           alt="Carlos Córdova"
@@ -73,12 +64,6 @@ export default {
         border-radius: 20px;
         width: 85%;
       }
-      .bg-2 {
-        position: absolute;
-        z-index: 0;
-        left: 0;
-        top: 60px;
-      }
       .me {
         position: relative;
         z-index: 1;
@@ -92,9 +77,6 @@ export default {
       &--image {
         img {
           width: 100%;
-        }
-        .bg-2 {
-          display: none;
         }
       }
     }

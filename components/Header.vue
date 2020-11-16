@@ -20,6 +20,7 @@
           class="aboutImg animationLeft imgStatic"
           src="../assets/img/person.webp"
           alt="Person with Laptop"
+          width="100%"
         />
       </div>
       <div class="header__contenedor--texto animationRight">
@@ -51,9 +52,8 @@ export default {
       this.anim = anim;
     },
     go(ancla) {
-      /* var position = $("#" + ancla).position();
-      $("html, body").animate({ scrollTop: position.top - 20 }, 600); */
-      console.log("Hola" + ancla);
+      var position = $("#" + ancla).position();
+      $("html, body").animate({ scrollTop: position.top - 20 }, 600);
     }
   }
 };

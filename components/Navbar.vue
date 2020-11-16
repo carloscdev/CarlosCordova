@@ -43,19 +43,21 @@
       </div>
       <figure class="navbar__contenedor--logo">
         <nuxt-link to="/"
-          ><img src="../assets/img/Abr.webp" alt="CCDEV LOGO"
+          ><img width="100%" src="../assets/img/Abr.webp" alt="CCDEV LOGO"
         /></nuxt-link>
       </figure>
       <div class="navbar__contenedor--menu">
-        <a @click="closeMenu"><font-awesome-icon :icon="['fas', 'bars']"/></a>
+        <a @click.prevent="closeMenu"
+          ><font-awesome-icon :icon="['fas', 'bars']"
+        /></a>
       </div>
     </div>
     <div class="navbar__completo" :class="navbarActive ? 'navbar__active' : ''">
-      <div class="close" @click="closeMenu" v-if="navbarActive">
+      <div class="close" @click.prevent="closeMenu" v-if="navbarActive">
         <font-awesome-icon :icon="['fas', 'times']" />
       </div>
       <ul v-if="navbarActive">
-        <li @click="closeMenu">
+        <li @click.prevent="closeMenu">
           <nuxt-link to="/">
             <div class="itemNav">
               Home
@@ -63,12 +65,12 @@
             </div>
           </nuxt-link>
         </li>
-        <li @click="closeMenu">
+        <li @click.prevent="closeMenu">
           <nuxt-link to="/about">
             <div class="itemNav">About</div>
           </nuxt-link>
         </li>
-        <li @click="closeMenu">
+        <li @click.prevent="closeMenu">
           <nuxt-link to="/projects">
             <div class="itemNav">Projects</div>
           </nuxt-link>
