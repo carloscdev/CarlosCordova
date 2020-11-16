@@ -18,7 +18,7 @@
         />
         <img
           class="aboutImg animationLeft imgStatic"
-          src="../assets/img/person.png"
+          src="../assets/img/person.webp"
           alt="Person with Laptop"
         />
       </div>

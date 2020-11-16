@@ -4,6 +4,7 @@
   src: url("~@/static/fonts/Montserrat-ExtraLight.ttf")
     format("truetype");
   font-weight: 200;
+  font-display: swap
 }
 @font-face {
   font-family: "Montserrat";
@@ -11,6 +12,7 @@
     format("truetype");
   font-weight: 300;
   font-style: normal;
+  font-display: swap
 }
 @font-face {
   font-family: "Montserrat";
@@ -18,6 +20,7 @@
     format("truetype");
   font-weight: 500;
   font-style: medium;
+  font-display: swap
 }
 @font-face {
   font-family: "Montserrat";
@@ -25,6 +28,7 @@
     format("truetype");
   font-weight: 700;
   font-style: bold;
+  font-display: swap
 }
 // Variables
 @import './variables';
