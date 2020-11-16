@@ -57,7 +57,7 @@ export default {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../assets/img/bg-1.png");
+  background-image: url("../assets/img/bg-1.webp");
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;

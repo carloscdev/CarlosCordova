@@ -43,7 +43,7 @@
       </div>
       <figure class="navbar__contenedor--logo">
         <nuxt-link to="/"
-          ><img src="../assets/img/Abr.png" alt="Lentes"
+          ><img src="../assets/img/Abr.webp" alt="CCDEV LOGO"
         /></nuxt-link>
       </figure>
       <div class="navbar__contenedor--menu">
@@ -69,8 +69,8 @@
           </nuxt-link>
         </li>
         <li @click="closeMenu">
-          <nuxt-link to="/">
-            <div class="itemNav">Games</div>
+          <nuxt-link to="/projects">
+            <div class="itemNav">Projects</div>
           </nuxt-link>
         </li>
       </ul>

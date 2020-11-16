@@ -30,7 +30,7 @@
           data-aos-duration="1000"
           class="bg-2"
           width="500px"
-          src="../assets/img/bg-2.png"
+          src="../assets/img/bg-2.webp"
           alt="Fondo"
           v-lazy-load
         />
@@ -39,7 +39,7 @@
           data-aos-easing="linear"
           width="500px"
           class="me sombra"
-          src="../assets/img/me.png"
+          src="../assets/img/me.webp"
           alt="Carlos Córdova"
           v-lazy-load
         />
