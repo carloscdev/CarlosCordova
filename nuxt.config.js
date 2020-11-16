@@ -29,10 +29,10 @@ export default {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     script: [
-      {
+      /*       {
         src: "https://www.googletagmanager.com/gtag/js?id=UA-178576561-1",
         async: true
-      }
+      } */
     ]
   },
   /*
