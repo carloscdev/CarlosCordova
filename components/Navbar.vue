@@ -47,15 +47,24 @@
         /></nuxt-link>
       </figure>
       <div class="navbar__contenedor--menu">
-        <a @click="closeMenu"><font-awesome-icon :icon="['fas', 'bars']"/></a>        
+        <a @click="closeMenu"><font-awesome-icon :icon="['fas', 'bars']"/></a>
       </div>
     </div>
-    <div class="navbar__completo" :class="navbarActive ? 'navbar__active' : ''">
-      <div class="close" @click="closeMenu" v-if="navbarActive"><font-awesome-icon :icon="['fas', 'times']"/></div>
-      <ul v-if="navbarActive">        
+    <div
+      v-if="navbarActive"
+      class="navbar__completo"
+      :class="navbarActive ? 'navbar__active' : ''"
+    >
+      <div class="close" @click="closeMenu" v-if="navbarActive">
+        <font-awesome-icon :icon="['fas', 'times']" />
+      </div>
+      <ul v-if="navbarActive">
         <li @click="closeMenu">
           <nuxt-link to="/">
-            <div class="itemNav">Home <!-- <span class="color-rojo">*</span> --></div>
+            <div class="itemNav">
+              Home
+              <!-- <span class="color-rojo">*</span> -->
+            </div>
           </nuxt-link>
         </li>
         <li @click="closeMenu">
@@ -77,7 +86,7 @@ export default {
   name: "Navbar",
   data() {
     return {
-      navbarArriba: "navbarArriba",     
+      navbarArriba: "navbarArriba",
       navbarActive: false
     };
   },
@@ -92,8 +101,8 @@ export default {
         navbar.classList.toggle("sombra", window.scrollY > 100);
       });
     },
-    closeMenu(){
-      this.navbarActive = !this.navbarActive
+    closeMenu() {
+      this.navbarActive = !this.navbarActive;
     }
   }
 };
@@ -137,12 +146,12 @@ export default {
       text-align: right;
       font-size: var(--parrafo-p);
     }
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
       &--sociales {
         display: none;
       }
-      &--logo{
+      &--logo {
         text-align: left;
       }
     }
@@ -159,18 +168,18 @@ export default {
     justify-content: center;
     align-items: center;
     transition: $animacion-normal;
-    .close{
+    .close {
       position: absolute;
       top: 5vw;
       right: 5vw;
-      font-size:var(--titulo-h3);
+      font-size: var(--titulo-h3);
       cursor: pointer;
       transition: $animacion-normal;
       &:hover {
         color: $color-rojo;
       }
     }
-    ul{
+    ul {
       transition: $animacion-normal;
     }
     li {

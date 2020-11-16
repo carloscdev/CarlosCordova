@@ -88,7 +88,8 @@ export default {
           }
         ]
       }
-    ]
+    ],
+    "nuxt-lazy-load"
   ],
   /*
    ** Build configuration

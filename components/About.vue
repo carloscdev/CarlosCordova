@@ -29,15 +29,19 @@
           data-aos-easing="linear"
           data-aos-duration="1000"
           class="bg-2"
+          width="500px"
           src="../assets/img/bg-2.png"
           alt="Fondo"
+          v-lazy-load
         />
         <img
           data-aos="fade-left"
           data-aos-easing="linear"
+          width="500px"
           class="me sombra"
           src="../assets/img/me.png"
           alt="Carlos Córdova"
+          v-lazy-load
         />
       </div>
     </div>
