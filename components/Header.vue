@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header__scroll">
-      <a @click="go('about')">
+      <a @click.prevent="go('about')">
         <lottie
           class="aboutImg"
           :options="lottieScroll"
@@ -96,6 +96,7 @@ export default {
         }
       }
       .imgStatic {
+        padding-top: var(--margen-pequeno);
         @media (min-width: 768px) {
           display: none;
         }

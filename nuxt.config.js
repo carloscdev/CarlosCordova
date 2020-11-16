@@ -51,7 +51,8 @@ export default {
     {
       src: "~plugins/animated-on-scroll",
       mode: "client"
-    }
+    },
+    "~/plugins/jsonld"
   ],
   /*
    ** Auto import components
@@ -89,8 +90,20 @@ export default {
         ]
       }
     ],
-    "nuxt-lazy-load"
+    "nuxt-lazy-load",
+    "@nuxtjs/sitemap"
   ],
+  // Sitemap
+  sitemap: {
+    hostname: "https://carlosc.tech",
+    gzip: true,
+    exclude: ["/exclude-one", "/exclude-two"],
+    defaults: {
+      changefreq: "daily",
+      priority: 1,
+      lastmod: new Date()
+    }
+  },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
