@@ -14,6 +14,9 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
+    htmlAttrs: {
+      lang: "en"
+    },
     title: process.env.npm_package_name || "",
     meta: [
       { charset: "utf-8" },
@@ -25,10 +28,12 @@ export default {
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-    script: [{
-      src: 'https://www.googletagmanager.com/gtag/js?id=UA-178576561-1',
-      async: true
-    }]
+    script: [
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=UA-178576561-1",
+        async: true
+      }
+    ]
   },
   /*
    ** Global CSS
@@ -58,9 +63,10 @@ export default {
    */
   buildModules: [
     "@nuxtjs/fontawesome",
-    ['@nuxtjs/google-analytics',
+    [
+      "@nuxtjs/google-analytics",
       {
-        id: 'UA-178576561-1'
+        id: "UA-178576561-1"
       }
     ]
   ],

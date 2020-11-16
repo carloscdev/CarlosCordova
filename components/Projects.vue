@@ -17,43 +17,48 @@
         paginationActiveColor="#ef0838"
         class="projects__carrusel"
       >
-        <slide v-for="project in projects" :key="project.id">
+        <slide
+          v-for="project in projects"
+          :key="project.id"
+          aria-hidden="false"
+        >
           <div class="projects__slider contenedor">
             <div
               class="projects__slider--imagen"
               data-aos="fade-right"
               data-aos-easing="linear"
             >
-              <img :src="project.image" :alt="project.title" />
+              <img width="100%" :src="project.image" :alt="project.title" />
             </div>
             <div
               class="projects__slider--texto"
               data-aos="fade-up"
               data-aos-easing="linear"
             >
-              <h3>{{project.title}}</h3>
+              <h3>{{ project.title }}</h3>
               <ul>
                 <li>
-                  <font-awesome-icon
-                    class="icon"
-                    :icon="['fas', 'asterisk']"
-                  />
-                  {{project.description}}
+                  <font-awesome-icon class="icon" :icon="['fas', 'asterisk']" />
+                  {{ project.description }}
                 </li>
                 <li>
                   <font-awesome-icon
                     class="icon"
                     :icon="['fas', 'calendar-day']"
-                  />{{project.data}}
+                  />{{ project.data }}
                 </li>
                 <li>
                   <font-awesome-icon
                     class="icon"
                     :icon="['fas', 'map-marker-alt']"
-                  />{{project.place}}
+                  />{{ project.place }}
                 </li>
                 <li>
-                  <a :href="project.site" target="_blank" rel="noreferrer noopener">
+                  <a
+                    :href="project.site"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
                     <font-awesome-icon
                       class="icon"
                       :icon="['fas', 'link']"
@@ -79,7 +84,7 @@ export default {
         {
           id: "1",
           title: "Zosma Team",
-          image: "https://i.postimg.cc/hP8xbK0b/zosma-new.png",
+          image: "https://i.postimg.cc/RVvG9ZHt/zosma-new.png",
           site: "https://zosma.pe",
           data: "Oct - 2020",
           place: "Huancayo - Perú",
@@ -88,7 +93,7 @@ export default {
         {
           id: "2",
           title: "UPC - App",
-          image: "https://i.postimg.cc/MZQ1H7ML/upc-app.png",
+          image: "https://i.postimg.cc/0NhcqGY5/upc-app.png",
           site: "https://miupcapp.vercel.app/",
           data: "Oct - 2020",
           place: "Lima - Perú",
@@ -97,7 +102,7 @@ export default {
         {
           id: "3",
           title: "Portfolio Dark",
-          image: "https://i.postimg.cc/X76dCr9Y/portafolio-dark.png",
+          image: "https://i.postimg.cc/90hbDWgv/portafolio-dark.png",
           site: "https://ernesto.softaki.com/",
           data: "Sep - 2020",
           place: "Lima - Perú",
@@ -106,7 +111,7 @@ export default {
         {
           id: "4",
           title: "Texas Club",
-          image: "https://i.postimg.cc/x1tzhghX/texas-club.png",
+          image: "https://i.postimg.cc/3rX9Pvd7/texas-club.png",
           site: "https://rocky-temple-75599.herokuapp.com/",
           data: "Sep - 2020",
           place: "Lima - Perú",
@@ -115,7 +120,7 @@ export default {
         {
           id: "5",
           title: "Softaki Tienda",
-          image: "https://i.postimg.cc/Ssw8Vs5V/softaki.png",
+          image: "https://i.postimg.cc/50vp9HgB/softaki.png",
           site: "https://tiendavirtual.softaki.com/",
           data: "Aug - 2020",
           place: "Lima - Perú",
@@ -124,22 +129,21 @@ export default {
         {
           id: "6",
           title: "Vida Dent",
-          image: "https://i.postimg.cc/Dw2GxRjV/vida-dent.png",
+          image: "https://i.postimg.cc/15MBz1Gj/vida-dent.png",
           site: "https://cdvidadent.com/",
           data: "Jul - 2020",
           place: "Pucallpa - Perú",
           description: "Website with PHP - MySql"
         },
-                {
+        {
           id: "7",
           title: "Zosma Team",
-          image: "https://i.postimg.cc/wvtLhJW7/zosma-old.png",
+          image: "https://i.postimg.cc/2y7wvPP3/zosma-old.png",
           site: "https://zosma.netlify.app/",
           data: "Apr - 2020",
           place: "Huancayo - Perú",
           description: "Landing Page with Html - Css - Js"
         }
-        
       ]
     };
   },
@@ -193,10 +197,10 @@ export default {
   width: 2vw !important;
   height: 2vw !important;
   outline: none !important;
-  @media (max-width: 768px) {   
-      width: 5vw !important;
-      height: 5vw !important;
-      padding: 2vw !important;
+  @media (max-width: 768px) {
+    width: 5vw !important;
+    height: 5vw !important;
+    padding: 2vw !important;
   }
 }
 </style>
