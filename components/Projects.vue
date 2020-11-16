@@ -89,7 +89,7 @@ export default {
         {
           id: "1",
           title: "Zosma Team",
-          image: "https://i.postimg.cc/wjvsX0MW/zosma-new.png",
+          image: "https://i.ibb.co/GVsRkCt/zosma-new.png",
           site: "https://zosma.pe",
           data: "Oct - 2020",
           place: "Huancayo - Perú",
@@ -98,7 +98,7 @@ export default {
         {
           id: "2",
           title: "UPC - App",
-          image: "https://i.postimg.cc/c4TntVxg/upc-app.png",
+          image: "https://i.ibb.co/2sgQPvv/upc-app.png",
           site: "https://miupcapp.vercel.app/",
           data: "Oct - 2020",
           place: "Lima - Perú",
@@ -107,7 +107,7 @@ export default {
         {
           id: "3",
           title: "Portfolio Dark",
-          image: "https://i.postimg.cc/YqtF9pHB/portafolio-dark.png",
+          image: "https://i.ibb.co/1zqRdxs/portafolio-dark.png",
           site: "https://ernesto.softaki.com/",
           data: "Sep - 2020",
           place: "Lima - Perú",
@@ -116,7 +116,7 @@ export default {
         {
           id: "4",
           title: "Texas Club",
-          image: "https://i.postimg.cc/yN3g5xFc/texas-club.png",
+          image: "https://i.ibb.co/VHxfNQC/texas-club.png",
           site: "https://rocky-temple-75599.herokuapp.com/",
           data: "Sep - 2020",
           place: "Lima - Perú",
@@ -125,7 +125,7 @@ export default {
         {
           id: "5",
           title: "Softaki Tienda",
-          image: "https://i.postimg.cc/x83bRZLZ/softaki.png",
+          image: "https://i.ibb.co/Qmf17FS/softaki.png",
           site: "https://tiendavirtual.softaki.com/",
           data: "Aug - 2020",
           place: "Lima - Perú",
@@ -134,7 +134,7 @@ export default {
         {
           id: "6",
           title: "Vida Dent",
-          image: "https://i.postimg.cc/Njz2pmrQ/vida-dent.png",
+          image: "https://i.ibb.co/ZK8YFF6/vida-dent.png",
           site: "https://cdvidadent.com/",
           data: "Jul - 2020",
           place: "Pucallpa - Perú",
@@ -143,7 +143,7 @@ export default {
         {
           id: "7",
           title: "Zosma Team",
-          image: "https://i.postimg.cc/MZ7RqngY/zosma-old.png",
+          image: "https://i.ibb.co/vQsHLdH/zosma-old.png",
           site: "https://zosma.netlify.app/",
           data: "Apr - 2020",
           place: "Huancayo - Perú",
