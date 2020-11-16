@@ -3,9 +3,10 @@
     <div class="experience__contenedor contenedor espacio">
       <div
         class="experience__contenedor--lista"
-        data-aos="fade-right"
-        data-aos-easing="linear"
-        data-aos-duration="500"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0"
       >
         <h3>
           <span class="number">01.</span> Experience
@@ -19,9 +20,10 @@
       </div>
       <div
         class="experience__contenedor--lista"
-        data-aos="fade-right"
-        data-aos-easing="linear"
-        data-aos-duration="1000"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0"
       >
         <h3>
           <span class="number">02.</span> Projects
@@ -35,9 +37,10 @@
       </div>
       <div
         class="experience__contenedor--lista"
-        data-aos="fade-right"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0"
       >
         <h3>
           <span class="number">03.</span> Hobbies
