@@ -50,11 +50,7 @@
         <a @click="closeMenu"><font-awesome-icon :icon="['fas', 'bars']"/></a>
       </div>
     </div>
-    <div
-      v-if="navbarActive"
-      class="navbar__completo"
-      :class="navbarActive ? 'navbar__active' : ''"
-    >
+    <div class="navbar__completo" :class="navbarActive ? 'navbar__active' : ''">
       <div class="close" @click="closeMenu" v-if="navbarActive">
         <font-awesome-icon :icon="['fas', 'times']" />
       </div>

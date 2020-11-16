@@ -112,8 +112,8 @@ export default {
           data: "Sep - 2020",
           place: "Lima - Perú",
           description: "Website with Nuxt Js - Graphql"
-        },
-        {
+        }
+        /*         {
           id: "4",
           title: "Texas Club",
           image: "https://i.ibb.co/VHxfNQC/texas-club.png",
@@ -148,7 +148,7 @@ export default {
           data: "Apr - 2020",
           place: "Huancayo - Perú",
           description: "Landing Page with Html - Css - Js"
-        }
+        } */
       ]
     };
   },
