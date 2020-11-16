@@ -43,16 +43,6 @@ export default {
         { name: "twitter:description", content: appConfig.description }
       ]
     };
-  },
-  // Schema
-  jsonld() {
-    return {
-      "@context": "http://schema.org",
-      "@type": "WebPage",
-      name: "Carlos C. | Front-end",
-      url: "https://carlosc.tech",
-      description: "Front-end Developer"
-    };
   }
 };
 </script>

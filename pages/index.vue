@@ -26,14 +26,24 @@ export default {
     About,
     Experience,
     Projects
-  }, 
+  },
 
   mounted() {
     // Barra de progreso de carga
-    this.$nextTick(() => {
+    /*     this.$nextTick(() => {
       this.$nuxt.$loading.start();
       setTimeout(() => this.$nuxt.$loading.finish(), 5000);
-    });
+    }); */
+  },
+  // Schema
+  jsonld() {
+    return {
+      "@context": "http://schema.org",
+      "@type": "WebPage",
+      name: "Carlos C. | Front-end",
+      url: "https://carlosc.tech",
+      description: "Front-end Developer"
+    };
   }
 };
 </script>
