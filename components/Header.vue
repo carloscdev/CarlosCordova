@@ -12,9 +12,14 @@
     <div class="header__contenedor contenedor espacio">
       <div class="header__contenedor--image">
         <lottie
-          class="aboutImg animationLeft"
+          class="aboutImg animationLeft imgAnimation"
           :options="lottieOptions"
           v-on:animCreated="handleAnimation"
+        />
+        <img
+          class="aboutImg animationLeft imgStatic"
+          src="../assets/img/person.png"
+          alt="Person with Laptop"
         />
       </div>
       <div class="header__contenedor--texto animationRight">
@@ -81,6 +86,19 @@ export default {
       text-align: center;
       h1 {
         margin-bottom: var(--margen-pequeno);
+      }
+    }
+    &--image {
+      text-align: center;
+      .imgAnimation {
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+      .imgStatic {
+        @media (min-width: 768px) {
+          display: none;
+        }
       }
     }
   }
