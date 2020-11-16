@@ -51,8 +51,9 @@ export default {
       this.anim = anim;
     },
     go(ancla) {
-      var position = $("#" + ancla).position();
-      $("html, body").animate({ scrollTop: position.top - 20 }, 600);
+      /* var position = $("#" + ancla).position();
+      $("html, body").animate({ scrollTop: position.top - 20 }, 600); */
+      console.log("Hola" + ancla);
     }
   }
 };

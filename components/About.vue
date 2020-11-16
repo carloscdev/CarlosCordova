@@ -32,7 +32,6 @@
           width="500px"
           src="../assets/img/bg-2.webp"
           alt="Fondo"
-          v-lazy-load
         />
         <img
           data-aos="fade-left"
@@ -41,7 +40,6 @@
           class="me sombra"
           src="../assets/img/me.webp"
           alt="Carlos Córdova"
-          v-lazy-load
         />
       </div>
     </div>
