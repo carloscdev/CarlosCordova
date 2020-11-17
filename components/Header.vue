@@ -62,10 +62,6 @@ export default {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../assets/img/bg-1.webp");
-  background-size: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
   overflow: hidden;
   &__scroll {
     position: absolute;
@@ -79,6 +75,10 @@ export default {
     }
   }
   &__contenedor {
+    background-image: url("../assets/img/bg-1.webp");
+    background-size: 110%;
+    background-position: center center;
+    background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 0.3fr 1fr;
     align-items: center;

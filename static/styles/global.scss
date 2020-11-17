@@ -45,12 +45,6 @@ body{
   font-family: 'Montserrat', sans-serif;
   color: $color-negro;
 }
-.rojo {
-  border-bottom: 4px solid $color-rojo;
-}
-.color-rojo {
-  color: $color-rojo;
-}
 h1 {
   font-size: var(--titulo-h1);
   font-weight: 300;
@@ -61,13 +55,16 @@ h1 {
 }
 h2{
   font-size: var(--titulo-h2);
-  font-weight: 700;
+  font-weight: 300;
   padding-bottom: var(--margen-pequeno);
 }
 h3 {
   font-size: var(--titulo-h3);
   font-weight: 500;
   padding-bottom: var(--margen-pequeno);
+}
+h4 {
+  font-weight: 500;
 }
 p{ 
   font-size: var(--parrafo-p);
@@ -91,11 +88,21 @@ img {
   max-width: 100%;
 }
 .contenedor {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;  
-  @media screen and (max-width:768px){
+/*   @media screen and (max-width:768px){
     width: 80%;
-  } 
+  }  */
+}
+.rojo {
+  border-bottom: 4px solid $color-rojo;
+  font-weight: 700;
+}
+.color-rojo {
+  color: $color-rojo;
+}
+.color-blanco {
+  color: $color-blanco;
 }
 .espacio {
   padding-top: var(--margen-mediano);

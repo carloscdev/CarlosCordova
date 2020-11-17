@@ -1,12 +1,13 @@
 $color-rojo : #ef0838;
 $color-negro: #1C1C1C;
 $color-gris: #969393;
-$color-humo: #cfcfcf;
+$color-humo: #aaaaaa;
 $color-blanco: white;
+$color-blancoFondo: #F7F7F7;
 
 $animacion-rapida: all 100ms ease;
 $animacion-media: all 300ms ease;
-$animacion-normal: all 500ms ease;
+$animacion-normal: all 600ms ease;
 
 :root {
   --margen-grande: 9vw;
@@ -17,7 +18,7 @@ $animacion-normal: all 500ms ease;
   --titulo-h1: calc(1rem + 4.5vw);
   --titulo-h2: calc(1rem + 2vw);
   --titulo-h3: calc(1rem + 1vw);
-  --parrafo-p: calc(1rem + 0.3vw);
+  --parrafo-p: calc(1rem + 0.2vw);
   @media (max-width: 768px){
     --margen-grande: 12vw;
     --margen-mediano: 9vw;

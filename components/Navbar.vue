@@ -42,9 +42,10 @@
         </ul>
       </div>
       <figure class="navbar__contenedor--logo">
-        <nuxt-link to="/"
-          ><img src="../assets/img/Abr.webp" alt="CCDEV LOGO"
-        /></nuxt-link>
+        <nuxt-link to="/">
+          <!-- <img src="../assets/img/Abr.webp" alt="CCDEV LOGO" /> -->
+          <h2 class="LogoCarlos">CCDEV<span class="color-rojo">*</span></h2>
+        </nuxt-link>
       </figure>
       <div class="navbar__contenedor--menu">
         <a @click.prevent="closeMenu"
@@ -136,8 +137,19 @@ export default {
     }
     &--logo {
       text-align: center;
-      img {
+      /*       img {
         width: 120px;
+      } */
+      .LogoCarlos {
+        font-size: var(--titulo-h3);
+        padding-bottom: 0;
+        font-weight: 700;
+        &:hover span {
+          color: $color-negro;
+        }
+        span {
+          transition: $animacion-media;
+        }
       }
     }
     &--menu {
@@ -157,7 +169,7 @@ export default {
   &__completo {
     position: absolute;
     min-height: 100vh;
-    background-color: $color-negro;
+    background-color: rgba($color: $color-negro, $alpha: 0.99);
     top: 0;
     right: 0;
     width: 0;

@@ -61,7 +61,6 @@ export default {
       text-align: right;
       img {
         border-radius: 20px;
-        width: 85%;
       }
       .me {
         position: relative;

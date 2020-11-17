@@ -9,31 +9,49 @@
     <section id="experience">
       <Experience />
     </section>
+    <section id="services">
+      <Services />
+    </section>
     <section id="projects">
-      <Projects />
+      <Projects :projects="projects" />
     </section>
   </div>
 </template>
 
 <script>
-import Header from "@/components/Header";
-import About from "@/components/About";
-import Experience from "@/components/Experience";
-import Projects from "@/components/Projects";
 export default {
-  components: {
-    Header,
-    About,
-    Experience,
-    Projects
-  },
-
-  mounted() {
-    // Barra de progreso de carga
-    /*     this.$nextTick(() => {
-      this.$nuxt.$loading.start();
-      setTimeout(() => this.$nuxt.$loading.finish(), 5000);
-    }); */
+  data() {
+    return {
+      projects: [
+        {
+          id: "1",
+          title: "Zosma Team",
+          image: "https://i.ibb.co/55t4KB5/zosma-new.webp",
+          site: "https://zosma.pe",
+          data: "Oct - 2020",
+          place: "Huancayo - Perú",
+          description: "Website with Nuxt Js - Lottie Js"
+        },
+        {
+          id: "2",
+          title: "UPC - App",
+          image: "https://i.ibb.co/5xQjsJH/upc-app.webp",
+          site: "https://miupcapp.vercel.app",
+          data: "Oct - 2020",
+          place: "Lima - Perú",
+          description: "Landing Page with Bootstrap - Js"
+        },
+        {
+          id: "3",
+          title: "Portfolio Dark",
+          image: "https://i.ibb.co/tY4hhgR/portafolio-dark.webp",
+          site: "https://ernesto.softaki.com",
+          data: "Sep - 2020",
+          place: "Lima - Perú",
+          description: "Website with Nuxt Js - Graphql"
+        }
+      ]
+    };
   },
   // Schema
   jsonld() {
