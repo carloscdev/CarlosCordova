@@ -30,12 +30,10 @@
   </div>
 </template>
 <script>
-import $ from "jquery";
 import lottie from "vue-lottie/src/lottie.vue";
 import * as animationData from "~/assets/img/person.json";
 import * as animationScroll from "~/assets/img/scroll.json";
 export default {
-  name: "Header",
   components: {
     lottie
   },

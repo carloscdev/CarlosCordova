@@ -82,10 +82,8 @@
 </template>
 <script>
 export default {
-  name: "Navbar",
   data() {
     return {
-      navbarArriba: "navbarArriba",
       navbarActive: false
     };
   },
@@ -171,7 +169,7 @@ export default {
     min-height: 100vh;
     background-color: rgba($color: $color-negro, $alpha: 0.99);
     top: 0;
-    right: 0;
+    right: -1000px;
     width: 0;
     color: $color-blanco;
     display: flex;
@@ -230,5 +228,6 @@ export default {
 }
 .navbar__active {
   width: 100%;
+  right: 0;
 }
 </style>

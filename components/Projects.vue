@@ -77,11 +77,9 @@
 </template>
 <script>
 export default {
-  name: "Projects",
   data() {
     return {
-      showCarousel: false,
-      imgPreUrl: "../assets/img/projects/"
+      showCarousel: false
     };
   },
   props: {
