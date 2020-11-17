@@ -11,9 +11,9 @@
           v-for="(thing, index) in things"
           :key="index"
         >
-          <div class="services__contenedor--icon color-blanco">
+          <h3 class="services__contenedor--icon color-blanco">
             <font-awesome-icon :icon="[thing.pre, thing.icon]" />
-          </div>
+          </h3>
           <h4>{{ thing.title }}</h4>
           <span>
             {{ thing.description }}
@@ -33,42 +33,42 @@ export default {
           icon: "desktop",
           title: "Web Development",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, facere."
+            "Custom website design and development, using technologies such as Vue Js, React Js, etc."
         },
         {
           pre: "fas",
           icon: "pencil-ruler",
           title: "Design UI/UX",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, facere."
+            "I create attractive and intuitive designs for your business or company. I use Figma and AdobeXD"
         },
         {
           pre: "fas",
           icon: "chalkboard-teacher",
           title: "Lessons",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, facere."
+            "If you are starting to create web pages, I can teach you everything I learned throughout my career."
         },
         {
           pre: "fas",
           icon: "photo-video",
           title: "Multimedia edition",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, facere."
+            "I am learning to edit photos and videos, it is a long process but I enjoy it. I use Photoshop and Filmora."
         },
         {
           pre: "fab",
           icon: "youtube",
           title: "Video Tutorials",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, facere."
+            "On my YouTube channel I upload video tutorials on web development and technology."
         },
         {
           pre: "fas",
           icon: "laptop",
           title: "Content Creation",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, facere."
+            "I have experience creating content for social networks like Facebook and Instagram."
         }
       ]
     };
@@ -112,8 +112,8 @@ export default {
       }
     }
     &--icon {
-      font-size: var(--titulo-h3);
       transition: $animacion-normal;
+      padding: 0;
     }
   }
 }
