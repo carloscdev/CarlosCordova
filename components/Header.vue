@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header__scroll">
-      <a @click.prevent="go('about')">
+      <a class="linkAbout" href="#about">
         <lottie
           class="aboutImg"
           :options="lottieScroll"
@@ -47,10 +47,6 @@ export default {
   methods: {
     handleAnimation: function(anim) {
       this.anim = anim;
-    },
-    go(ancla) {
-      var position = $("#" + ancla).position();
-      $("html, body").animate({ scrollTop: position.top - 20 }, 600);
     }
   }
 };

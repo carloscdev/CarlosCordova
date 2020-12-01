@@ -1,5 +1,6 @@
 <template>
   <div class="projectPage">
+    <Experience />
     <Projects :projects="projects" />
   </div>
 </template>

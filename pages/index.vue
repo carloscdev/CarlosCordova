@@ -34,21 +34,21 @@ export default {
         },
         {
           id: "2",
-          title: "UPC - App",
-          image: "https://i.ibb.co/5xQjsJH/upc-app.webp",
-          site: "https://miupcapp.vercel.app",
-          data: "Oct - 2020",
-          place: "Lima - Perú",
-          description: "Landing Page with Bootstrap - Js"
-        },
-        {
-          id: "3",
           title: "Portfolio Dark",
           image: "https://i.ibb.co/tY4hhgR/portafolio-dark.webp",
           site: "https://ernesto.softaki.com",
           data: "Sep - 2020",
           place: "Lima - Perú",
           description: "Website with Nuxt Js - Graphql"
+        },
+        {
+          id: "3",
+          title: "View More Projects",
+          image: "https://i.postimg.cc/NFHknT0L/all-projects.png",
+          site: "https://carlosc.tech/projects",
+          data: "Since 2018",
+          place: "Perú",
+          description: "Website with many technologies"
         }
       ]
     };
@@ -66,6 +66,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@import "~/static/styles/global.scss";
-</style>
+<style lang="scss"></style>

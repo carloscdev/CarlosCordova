@@ -137,18 +137,7 @@ export default {
       text-align: center;
       /*       img {
         width: 120px;
-      } */
-      .LogoCarlos {
-        font-size: var(--titulo-h3);
-        padding-bottom: 0;
-        font-weight: 700;
-        &:hover span {
-          color: $color-negro;
-        }
-        span {
-          transition: $animacion-media;
-        }
-      }
+      } */      
     }
     &--menu {
       text-align: right;
@@ -229,5 +218,16 @@ export default {
 .navbar__active {
   width: 100%;
   right: 0;
+}
+.LogoCarlos {
+  font-size: var(--titulo-h3);
+  padding-bottom: 0;
+  font-weight: 700;
+  &:hover span {
+    color: $color-negro;
+  }
+  span {
+    transition: $animacion-media;
+  }
 }
 </style>

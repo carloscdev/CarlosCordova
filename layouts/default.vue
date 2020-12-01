@@ -2,15 +2,13 @@
   <div>
     <Navbar />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 <script>
-import Navbar from "@/components/Navbar";
 import { appConfig } from "@/env";
 export default {
-  components: {
-    Navbar
-  },
+
   head() {
     return {
       title: "Carlos C. | Front-end",
@@ -53,4 +51,6 @@ export default {
   }
 };
 </script>
-<style></style>
+<style lang="scss">
+@import "~/static/styles/global.scss";
+</style>
