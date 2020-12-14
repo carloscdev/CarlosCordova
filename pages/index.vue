@@ -26,7 +26,7 @@ export default {
         {
           id: "1",
           title: "Zosma Team",
-          image: "https://i.ibb.co/55t4KB5/zosma-new.webp",
+          image: "zosma-new.webp",
           site: "https://zosma.pe",
           data: "Oct - 2020",
           place: "Huancayo - Perú",
@@ -35,7 +35,7 @@ export default {
         {
           id: "2",
           title: "Portfolio Dark",
-          image: "https://i.ibb.co/tY4hhgR/portafolio-dark.webp",
+          image: "portafolio-dark.webp",
           site: "https://ernesto.softaki.com",
           data: "Sep - 2020",
           place: "Lima - Perú",
@@ -44,7 +44,7 @@ export default {
         {
           id: "3",
           title: "View More Projects",
-          image: "https://i.postimg.cc/NFHknT0L/all-projects.png",
+          image: "all-projects.webp",
           site: "https://carlosc.tech/projects",
           data: "Since 2018",
           place: "Perú",

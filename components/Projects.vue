@@ -30,7 +30,10 @@
               data-aos-delay="300"
               data-aos-offset="0"
             >
-              <img :src="project.image" :alt="project.title" />
+              <img
+                :src="require(`../assets/img/Proyectos/${project.image}`)"
+                :alt="project.title"
+              />
             </div>
             <div
               class="projects__slider--texto"
