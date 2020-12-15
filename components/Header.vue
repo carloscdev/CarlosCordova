@@ -1,8 +1,8 @@
 <template>
   <div class="header">
     <div class="header__scroll">
-      <small>scroll down</small>
       <a class="linkAbout" href="#about">
+        <small>scroll down</small>
         <font-awesome-icon
           class="color-rojo flotar flecha"
           :icon="['fas', 'chevron-down']"
