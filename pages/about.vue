@@ -9,11 +9,6 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  name: "about"
-};
-</script>
 <style lang="scss">
 .aboutPage {
   @media (max-width: 768px) {

@@ -16,7 +16,6 @@
     "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/sitemap": "^2.4.0",
     "aos": "^2.3.4",    
-    "lottie-vuejs": "^0.4.0",
     "nuxt": "^2.14.0",
     "nuxt-fontawesome": "^0.4.0",
     "nuxt-jsonld": "^1.5.0",    
