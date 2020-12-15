@@ -135,9 +135,6 @@ export default {
     }
     &--logo {
       text-align: center;
-      /*       img {
-        width: 120px;
-      } */      
     }
     &--menu {
       text-align: right;
@@ -194,10 +191,10 @@ export default {
           content: "";
           display: block;
           width: 10%;
-          height: 10px;
+          height: 12px;
           background-color: $color-rojo;
           position: absolute;
-          bottom: 0;
+          bottom: -10px;
           left: 0;
           right: 0;
           transition: $animacion-normal;
@@ -205,6 +202,9 @@ export default {
         &:hover:before {
           width: 100%;
         }
+      }
+      .nuxt-link-exact-active div:before {
+        width: 100% !important;
       }
       margin-bottom: var(--margen-pequeno);
     }

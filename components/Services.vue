@@ -111,6 +111,11 @@ export default {
         grid-template-columns: repeat(2, 1fr);
       }
     }
+    @media (max-width: 480px) {
+      &--lista {
+        grid-template-columns: 1fr;
+      }
+    }
     &--icon {
       transition: $animacion-normal;
       padding: 0;

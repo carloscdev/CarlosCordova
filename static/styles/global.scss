@@ -41,6 +41,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body{
   font-family: 'Montserrat', sans-serif;
   color: $color-negro;
@@ -48,6 +51,7 @@ body{
 h1 {
   font-size: var(--titulo-h1);
   font-weight: 300;
+  margin-bottom: var(--margen-pequeno);
   span{
     font-weight: 700;
     border-bottom: 4px solid $color-rojo;

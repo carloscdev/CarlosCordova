@@ -1,25 +1,19 @@
 <template>
   <div class="header">
     <div class="header__scroll">
-      <a class="linkAbout" href="#about">
-        <lottie
-          class="aboutImg"
-          :options="lottieScroll"
-          v-on:animCreated="handleAnimation"
+      <a class="linkAbout " href="#about">
+        <font-awesome-icon
+          class="color-rojo flotar"
+          :icon="['fas', 'chevron-down']"
         />
       </a>
     </div>
     <div class="header__contenedor contenedor espacio">
       <div class="header__contenedor--image">
         <lottie
-          class="aboutImg animationLeft imgAnimation"
+          class="aboutImg animationLeft"
           :options="lottieOptions"
           v-on:animCreated="handleAnimation"
-        />
-        <img
-          class="aboutImg animationLeft imgStatic"
-          src="../assets/img/person.webp"
-          alt="Person with Laptop"
         />
       </div>
       <div class="header__contenedor--texto animationRight">
@@ -32,7 +26,6 @@
 <script>
 import lottie from "vue-lottie/src/lottie.vue";
 import * as animationData from "~/assets/img/person.json";
-import * as animationScroll from "~/assets/img/scroll.json";
 export default {
   components: {
     lottie
@@ -40,8 +33,7 @@ export default {
   data() {
     return {
       anim: null, // for saving the reference to the animation
-      lottieOptions: { animationData: animationData.default },
-      lottieScroll: { animationData: animationScroll.default }
+      lottieOptions: { animationData: animationData.default }
     };
   },
   methods: {
@@ -52,6 +44,9 @@ export default {
 };
 </script>
 <style lang="scss">
+.linkAbout {
+  font-size: 2.5rem;
+}
 .header {
   min-height: 100vh;
   display: flex;
@@ -78,9 +73,6 @@ export default {
     align-items: center;
     &--texto {
       text-align: center;
-      h1 {
-        margin-bottom: var(--margen-pequeno);
-      }
     }
     &--image {
       text-align: center;

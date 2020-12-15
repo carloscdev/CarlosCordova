@@ -1,5 +1,6 @@
 <template>
   <div class="projectPage">
+    <SubHeader :title="'Projects'" :description="'Look at some projects'" />
     <Experience />
     <Projects :projects="projects" />
   </div>

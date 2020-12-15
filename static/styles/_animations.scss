@@ -34,4 +34,18 @@
      opacity: 1;
      transform: translateX(0);
   }
-} 
+}
+.flotar {
+  animation: bajar-subirs 2s ease infinite;
+}
+@keyframes bajar-subirs {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

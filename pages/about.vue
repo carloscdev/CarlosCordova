@@ -1,20 +1,17 @@
 <template>
   <div class="aboutPage">
-    <div id="aboutP">
-      <About />
-    </div>
+    <SubHeader :title="'About Me'" :description="'Get to know me better'" />
     <div id="servicesP">
       <Services />
+    </div>
+    <div id="aboutP">
+      <About />
     </div>
   </div>
 </template>
 <script>
-import About from "@/components/About.vue";
 export default {
-  name: "about",
-  components: {
-    About
-  }
+  name: "about"
 };
 </script>
 <style lang="scss">

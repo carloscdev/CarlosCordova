@@ -8,7 +8,6 @@
 <script>
 import { appConfig } from "@/env";
 export default {
-
   head() {
     return {
       title: "Carlos C. | Front-end",
@@ -51,6 +50,3 @@ export default {
   }
 };
 </script>
-<style lang="scss">
-@import "~/static/styles/global.scss";
-</style>
