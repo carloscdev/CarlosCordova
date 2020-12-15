@@ -92,11 +92,15 @@ export default {
   },
   methods: {
     scrolling() {
-      document.addEventListener("scroll", () => {
-        const navbar = document.querySelector(".navbar");
-        navbar.classList.toggle("active", window.scrollY > 100);
-        navbar.classList.toggle("sombra", window.scrollY > 100);
-      });
+      document.addEventListener(
+        "scroll",
+        () => {
+          const navbar = document.querySelector(".navbar");
+          navbar.classList.toggle("active", window.scrollY > 100);
+          navbar.classList.toggle("sombra", window.scrollY > 100);
+        },
+        { passive: true }
+      );
     },
     closeMenu() {
       this.navbarActive = !this.navbarActive;
