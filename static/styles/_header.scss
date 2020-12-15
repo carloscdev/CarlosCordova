@@ -1,0 +1,63 @@
+.header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  &__scroll {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    .linkAbout {
+      font-size: 2.5rem;
+      cursor: pointer;
+    }
+    small {
+      opacity: 0.2;
+      display: block;     
+      transition: $animacion-media;
+    }
+    &:hover small{
+      opacity: 0.6;
+    }
+  }
+  &__contenedor {
+    background-image: url("../../assets/img/bg-1.webp");
+    background-size: 110%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    align-items: center;
+    &--texto {
+      text-align: center;
+    }
+    &--image {
+      text-align: center;
+    }
+  }
+  @media (max-width: 768px) {
+    &__scroll {
+      width: 60%;
+    }
+    &__contenedor {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "primero"
+        "segundo";
+      grid-row-gap: var(--margen-minimo);
+      &--image {
+        grid-area: segundo;
+        .aboutImg {
+          max-width: 70%;
+          margin: 0 auto;
+        }
+        &--texto {
+          grid-area: primero;
+        }
+      }
+    }
+  }
+}
