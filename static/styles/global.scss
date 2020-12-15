@@ -118,5 +118,20 @@ img {
   -moz-box-shadow: -10px 10px 14px -5px rgba(0,0,0,0.12);
   box-shadow: -10px 10px 14px -5px rgba(0,0,0,0.12);
 }
+//Navbar 
+@import './navbar';
+
 //Header 
 @import './header';
+
+//Experience 
+@import './experience';
+
+//Services 
+@import './services';
+
+//Projects 
+@import './projects';
+
+//Footer 
+@import './footer';

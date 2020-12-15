@@ -1,0 +1,31 @@
+.footer {
+  background-color: $color-negro;
+  color: $color-blanco;
+  &__primera {
+    background-color: #0e0e0e;
+    &--description {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: var(--margen-pequeno);
+      padding-bottom: var(--margen-pequeno);
+      a {
+        color: $color-rojo;
+      }
+      h2 {
+        color: $color-blanco;
+      }
+      h2:hover span {
+        color: $color-blanco;
+      }
+      h2:hover {
+        color: $color-rojo;
+      }
+      @media (max-width: 480px) {
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+}
