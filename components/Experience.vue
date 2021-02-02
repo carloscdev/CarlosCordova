@@ -10,11 +10,11 @@
       >
         <h3>
           <span class="number color-rojo">01</span>
-          Experience
+          Experiencia
         </h3>
         <p>
-          + 2 years of experience as a front-end developer, I also have some
-          experience as a backend.
+          + 2 años de experiencia como desarrollador web con diversas
+          tecnologías.
         </p>
       </div>
       <div
@@ -26,11 +26,11 @@
       >
         <h3>
           <span class="number color-rojo">02</span>
-          Projects
+          Proyectos
         </h3>
         <p>
-          I worked on many projects, for different parts of Peru (Lima,
-          Pucallpa, Huancayo).
+          Trabajé en proyectos en diferentes partes del Perú (Huancayo, Lima,
+          Pucallpa).
         </p>
       </div>
       <div
@@ -45,8 +45,7 @@
           Hobbies
         </h3>
         <p>
-          I practice capoeira for more than 5 years, I belong to the Cordão de
-          Ouro group.
+          Practico capoeira por más de 5 años en el Grupo Cordão de Ouro (CDO).
         </p>
       </div>
     </div>

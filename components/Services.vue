@@ -2,7 +2,7 @@
   <div class="services">
     <div class="services__contenedor contenedor">
       <h2 class="color-blanco" data-aos="fade-down" data-aos-easing="linear">
-        What I do?
+        Que hago?
       </h2>
       <div class="services__contenedor--lista ">
         <div
@@ -31,44 +31,44 @@ export default {
         {
           pre: "fas",
           icon: "desktop",
-          title: "Web Development",
+          title: "Desarollo Web",
           description:
-            "Custom website design and development, using technologies such as Vue Js, React Js, etc."
+            "Desarrollo front-end con tecnologías como Vue Js, Nuxt Js, React Js, Firebase, etc."
         },
         {
           pre: "fas",
           icon: "pencil-ruler",
-          title: "Design UI/UX",
+          title: "Diseño UI/UX",
           description:
-            "I create attractive and intuitive designs for your business or company. I use Figma and AdobeXD"
+            "Me encanta el diseño de interfaces, utilizo programas como Figma y AdobeXD."
         },
         {
           pre: "fas",
           icon: "chalkboard-teacher",
-          title: "Lessons",
+          title: "Asesoría",
           description:
-            "If you are starting to create web pages, I can teach you everything I learned throughout my career."
+            "Si estás iniciando y tienes dudas no dudes en contactarme que te ayudaré con mucho gusto.  "
         },
         {
           pre: "fas",
           icon: "photo-video",
-          title: "Multimedia edition",
+          title: "Edición Multimedia",
           description:
-            "I am learning to edit photos and videos, it is a long process but I enjoy it. I use Photoshop and Filmora."
+            "Estoy aprendiendoo a editar fotos y videos en programas como Photoshop y Filmora."
         },
         {
           pre: "fab",
           icon: "youtube",
-          title: "Video Tutorials",
+          title: "Videos",
           description:
-            "On my YouTube channel I upload video tutorials on web development and technology."
+            "En mi canal de Youtube podrás encontrar tutoriales que te ayudarán a mejorar tus habilidades."
         },
         {
           pre: "fas",
           icon: "laptop",
-          title: "Content Creation",
+          title: "Creación de contenido",
           description:
-            "I have experience creating content for social networks like Facebook and Instagram."
+            "Tengo experiencia con varias empresas manejando sus redes sociales como Facebook e Instagram."
         }
       ]
     };

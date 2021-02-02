@@ -6,12 +6,12 @@
         data-aos="fade-right"
         data-aos-easing="linear"
       >
-        <h2>About <span class="rojo">Me</span></h2>
+        <h2>Sobre <span class="rojo">Mi</span></h2>
         <p>
-          My name is Carlos Córdova. I'm a front-end developer, with experience
-          in various projects for different parts of Peru. I studied Systems
-          Engineer at the Continental University and complemented my studies at
-          many institutions.
+          Hola!!! Soy desarrollador Front-end, estudié Ingeniería de Sistemas e
+          Informática en Huancayo Perú. Tuve la oportunidad de estudiar por un
+          periodo de tiempo en la Universidad Tecnológica de Huejotzingo en
+          Puebla México.
         </p>
         <a
           href="https://api.whatsapp.com/send?phone=51962666663&text=Hola,%20¿Podemos%20conversar%20ahora?"
@@ -20,7 +20,7 @@
           class="btn-primary sombra"
         >
           <span><font-awesome-icon :icon="['fab', 'whatsapp']"/></span>
-          Contact Me</a
+          Escríbeme</a
         >
       </div>
       <div class="about__contenedor--image">

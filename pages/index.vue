@@ -12,46 +12,13 @@
     <section id="services">
       <Services />
     </section>
-    <section id="projects">
-      <Projects :projects="projects" />
-    </section>
   </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {
-      projects: [
-        {
-          id: "1",
-          title: "Zosma Team",
-          image: "zosma-new.webp",
-          site: "https://zosma.pe",
-          data: "Oct - 2020",
-          place: "Huancayo - Perú",
-          description: "Website with Nuxt Js - Lottie Js"
-        },
-        {
-          id: "2",
-          title: "Portfolio Dark",
-          image: "portafolio-dark.webp",
-          site: "https://ernesto.softaki.com",
-          data: "Sep - 2020",
-          place: "Lima - Perú",
-          description: "Website with Nuxt Js - Graphql"
-        },
-        {
-          id: "3",
-          title: "View More Projects",
-          image: "all-projects.webp",
-          site: "https://carlosc.tech/projects",
-          data: "Since 2018",
-          place: "Perú",
-          description: "Website with many technologies"
-        }
-      ]
-    };
+    return {};
   },
   // Schema
   jsonld() {

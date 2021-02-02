@@ -1,0 +1,138 @@
+.navbar {
+  position: fixed;
+  z-index: 9;
+  &__total {
+    padding-top: var(--margen-pequeno);
+    position: fixed;   
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: $animacion-media;
+  }
+  a {
+    transition: $animacion-media;
+    &:hover {
+      color: $color-rojo;
+    }
+  }
+  &__contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    &--sociales {
+      ul {
+        display: flex;
+        a {
+          margin-left: var(--margen-minimo);
+          font-size: var(--parrafo-p);
+        }
+      }
+    }
+    &--logo {
+      text-align: center;
+    }
+    &--menu {
+      text-align: right;
+      font-size: var(--parrafo-p);
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      &--sociales {
+        display: none;
+      }
+      &--logo {
+        text-align: left;
+      }
+    }
+  }
+  &__completo {
+    position: absolute;
+    min-height: 100vh;
+    background-color: rgba($color: $color-negro, $alpha: 1);
+    top: 0;
+    left: -200px;
+    width: 0;
+    color: $color-blanco;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: $animacion-normal;
+    .close {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      font-size: var(--titulo-h3);
+      cursor: pointer;
+      transition: $animacion-normal;
+      &:hover {
+        color: $color-rojo;
+      }
+    }
+    ul {
+      transition: $animacion-normal;
+    }
+    li {
+      a {
+        color: $color-blanco;
+        font-size: var(--parrafo-p);
+        font-weight: 500;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        &:hover {
+          color: $color-blanco;
+        }
+      }
+      .itemNav {
+        position: relative;
+        &:before {
+          content: "";
+          display: block;
+          width: 5px;
+          border-radius: 50%;
+          height: 5px;
+          background-color: transparent;
+          position: absolute;
+          margin: 0 auto;        
+          top: 40%;
+          left: -40%;
+          transition: $animacion-normal;
+        }
+        &:hover:before {
+          background-color: $color-rojo;
+        }
+      }
+      .nuxt-link-exact-active div:before {
+       /*  width: 100% !important; */
+      background-color: $color-rojo;
+      }
+      margin-top: var(--margen-pequeno);
+    }
+  }
+}
+.active {
+  background-color: $color-blanco;
+  padding-top: var(--margen-minimo);
+  padding-bottom: var(--margen-minimo);
+}
+.navbar__oculto{
+  display: none;
+
+}
+.navbar__active {
+  width: 5.5rem;
+  left: 0;
+  -webkit-box-shadow: 10px 0px 14px 5px rgba(0,0,0,0.12);
+  -moz-box-shadow: 10px 0px 14px 5px rgba(0,0,0,0.12);
+  box-shadow: 10px 0px 14px 5px rgba(0,0,0,0.12);
+}
+.LogoCarlos {
+  font-size: var(--titulo-h3);
+  padding-bottom: 0;
+  font-weight: 700;
+  &:hover span {
+    color: $color-negro;
+  }
+  span {
+    transition: $animacion-media;
+  }
+}
