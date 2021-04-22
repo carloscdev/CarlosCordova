@@ -32,7 +32,7 @@
           </li>
           <li>
             <a
-              href="https://youtube.com/user/djdarkhohuancayoperu"
+              href="https://www.youtube.com/channel/UCIpwDrk2cmOhsfBtHcWHDHA/videos"
               target="_blank"
               rel="noreferrer noopener"
               title="Youtube"

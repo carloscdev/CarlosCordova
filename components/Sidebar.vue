@@ -6,6 +6,15 @@
           <ul>
             <li>
               <a
+                href="https://ko-fi.com/carloscdev"
+                target="_blank"
+                rel="noreferrer noopener"
+                title="Ko-fi"
+                ><font-awesome-icon :icon="['fas', 'mug-hot']"
+              /></a>
+            </li>
+            <li>
+              <a
                 href="https://www.linkedin.com/in/carloscdev/"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -33,7 +42,7 @@
             </li>
             <li>
               <a
-                href="https://youtube.com/user/djdarkhohuancayoperu"
+                href="https://www.youtube.com/channel/UCIpwDrk2cmOhsfBtHcWHDHA/videos"
                 target="_blank"
                 rel="noreferrer noopener"
                 title="Youtube"
@@ -115,3 +124,9 @@ export default {
   }
 };
 </script>
+<style lang="scss">
+ul {
+  display: flex;
+  align-items: center;
+}
+</style>
