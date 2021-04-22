@@ -29,7 +29,7 @@
           Proyectos
         </h3>
         <p>
-          Trabajé en proyectos en diferentes partes del Perú (Huancayo, Lima,
+          Trabajé en proyectos para diversas partes del Perú (Huancayo, Lima,
           Pucallpa).
         </p>
       </div>

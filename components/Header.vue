@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header__scroll">
-      <a class="linkAbout" href="#about">
+      <a class="linkAbout" @click="go('about')">
         <small>scroll down</small>
         <font-awesome-icon
           class="color-rojo flotar flecha"
@@ -40,6 +40,10 @@ export default {
   methods: {
     handleAnimation: function(anim) {
       this.anim = anim;
+    },
+    go(ancla) {
+      const el = document.getElementById(ancla)
+      el.scrollIntoView({ behavior: 'smooth' })
     }
   }
 };

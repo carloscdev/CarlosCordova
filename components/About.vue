@@ -8,10 +8,12 @@
       >
         <h2>Sobre <span class="rojo">Mi</span></h2>
         <p>
-          Hola!!! Soy desarrollador Front-end, estudié Ingeniería de Sistemas e
-          Informática en Huancayo Perú. Tuve la oportunidad de estudiar por un
-          periodo de tiempo en la Universidad Tecnológica de Huejotzingo en
-          Puebla México.
+          Ingeniero de Sistemas y Desarrollador Front-end con + 2 años de
+          experiencia. He trabajado con diversas tecnologías y siempre estoy
+          buscando oportunidades para aprender.
+          Desde inicios de Abril del 2021 creo contenido gratuito en youtube
+          para desarrolladores que están iniciando, si tienes alguna consulta
+          no dudes en escribirme.
         </p>
         <a
           href="https://api.whatsapp.com/send?phone=51962666663&text=Hola,%20¿Podemos%20conversar%20ahora?"
@@ -28,7 +30,7 @@
           data-aos="fade-left"
           data-aos-easing="linear"
           class="me sombra"
-          src="../assets/img/me.webp"
+          src="../assets/img/me.jpg"
           alt="Carlos Córdova"
         />
       </div>
@@ -38,12 +40,12 @@
 <style lang="scss">
 .about {
   overflow: hidden;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   &__contenedor {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 0.8fr;
     align-items: center;
     grid-column-gap: var(--margen-mediano);
     &--texto {
@@ -55,7 +57,7 @@
       position: relative;
       text-align: right;
       img {
-        border-radius: 20px;
+        border-radius: 50%;
       }
       .me {
         position: relative;

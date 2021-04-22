@@ -43,7 +43,6 @@
       </div>
       <figure class="navbar__contenedor--logo">
         <nuxt-link to="/">
-          <!-- <img src="../assets/img/Abr.webp" alt="CCDEV LOGO" /> -->
           <h2 class="LogoCarlos">CCDEV<span class="color-rojo">*</span></h2>
         </nuxt-link>
       </figure>
@@ -62,7 +61,6 @@
           <nuxt-link to="/">
             <div class="itemNav">
               Home
-              <!-- <span class="color-rojo">*</span> -->
             </div>
           </nuxt-link>
         </li>
