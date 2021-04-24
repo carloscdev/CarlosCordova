@@ -8,6 +8,7 @@ $color-blancoFondo: #F7F7F7;
 $animacion-rapida: all 100ms ease;
 $animacion-media: all 300ms ease;
 $animacion-normal: all 600ms ease;
+$animacion: 500ms ease;
 
 :root {
   --margen-grande: 9vw;
@@ -29,5 +30,8 @@ $animacion-normal: all 600ms ease;
     --titulo-h2: calc(1.5rem + 2vw);
     --titulo-h3: calc(1.3rem + 1vw);
     --parrafo-p: calc(1rem + 0.5vw);
+  }
+  @media (min-width: 1850px) {
+    --titulo-h1: calc(1.2rem + 3vw);
   }
 }

@@ -94,10 +94,8 @@ img {
 }
 .contenedor {
   width: 80%;
-  margin: 0 auto;  
-/*   @media screen and (max-width:768px){
-    width: 80%;
-  }  */
+  margin: 0 auto; 
+  max-width: 1300px;
 }
 .rojo {
   border-bottom: 4px solid $color-rojo;
@@ -119,13 +117,17 @@ img {
   box-shadow: -10px 10px 14px -5px rgba(0,0,0,0.12);
 }
 //Navbar 
-@import './sidebar';
+// @import './sidebar';
+@import './navbar';
 
 //Header 
 @import './header';
 
 //Experience 
 @import './experience';
+
+//Tutorials 
+@import './tutorials';
 
 //Services 
 @import './services';

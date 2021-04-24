@@ -75,6 +75,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    '@nuxtjs/axios',
     [
       "nuxt-fontawesome",
       {
@@ -93,6 +94,9 @@ export default {
     /* "nuxt-lazy-load", */
     "@nuxtjs/sitemap"
   ],
+  axios: {
+    baseURL: 'https://ccdev-18635-default-rtdb.firebaseio.com/'
+  },
   // Sitemap
   sitemap: {
     hostname: "https://carlosc.tech",

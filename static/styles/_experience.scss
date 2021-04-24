@@ -7,6 +7,10 @@
   color: $color-negro;
   h3 {
     color: $color-negro;
+    span {
+      display: block;
+      font-weight: bold;
+    }
   }
   background-color: $color-blancoFondo;
   &__contenedor {

@@ -11,7 +11,7 @@
           Ingeniero de Sistemas y Desarrollador Front-end con + 2 años de
           experiencia. He trabajado con diversas tecnologías y siempre estoy
           buscando oportunidades para aprender.
-          Desde inicios de Abril del 2021 creo contenido gratuito en youtube
+          Desde inicios de Abril del 2021 empecé a crear contenido gratuito en youtube
           para desarrolladores que están iniciando, si tienes alguna consulta
           no dudes en escribirme.
         </p>

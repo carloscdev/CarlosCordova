@@ -124,9 +124,3 @@ export default {
   }
 };
 </script>
-<style lang="scss">
-ul {
-  display: flex;
-  align-items: center;
-}
-</style>

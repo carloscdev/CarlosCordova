@@ -65,13 +65,13 @@
           </nuxt-link>
         </li>
         <li @click.prevent="closeMenu">
-          <nuxt-link to="/about">
-            <div class="itemNav">About</div>
+          <nuxt-link to="/tutorials">
+            <div class="itemNav">Tutoriales</div>
           </nuxt-link>
         </li>
         <li @click.prevent="closeMenu">
           <nuxt-link to="/projects">
-            <div class="itemNav">Projects</div>
+            <div class="itemNav">Projectos</div>
           </nuxt-link>
         </li>
       </ul>
