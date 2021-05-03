@@ -8,14 +8,14 @@ export default {
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
-  target: "server",
+  target: "static",
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
     htmlAttrs: {
-      lang: "en"
+      lang: "es"
     },
     title: process.env.npm_package_name || "",
     meta: [
@@ -46,7 +46,7 @@ export default {
   plugins: [
     {
       src: "~plugins/vue-carousel",
-      ssr: false
+      mode: "client"
     },
     {
       src: "~plugins/animated-on-scroll",
@@ -107,6 +107,9 @@ export default {
       priority: 1,
       lastmod: new Date()
     }
+  },
+  generate: {
+    fallback: true
   },
   /*
    ** Build configuration

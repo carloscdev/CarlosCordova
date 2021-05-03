@@ -12,14 +12,14 @@
     <section id="services">
       <Services />
     </section>
+    <section id="help">
+      <Help />
+    </section>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {};
-  },
   // Schema
   jsonld() {
     return {

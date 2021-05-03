@@ -6,7 +6,7 @@
       <div class="lista contenedor">
         <div
           class="item sombra"
-          v-for="(l, index) in list" :key="l.id"
+          v-for="(l, index) in list" :key="index"
           @click="openModal(l.code)"
         >
         <h3>
@@ -19,7 +19,11 @@
         </div>
       </div>
     </div>
-    <div class="tutorials__video" v-if="openVideo">
+    <div
+      class="tutorials__video"
+      v-if="openVideo"
+      @click.self="closeModal"
+    >
       <iframe 
         class="video"
         :src="`https://www.youtube.com/embed/${codeVideo}`"
@@ -32,6 +36,7 @@
         <font-awesome-icon :icon="['fas', 'times']" />
       </div>
     </div>
+    <Help />
   </div>
 </template>
 <script>

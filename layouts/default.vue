@@ -10,7 +10,7 @@ import { appConfig } from "@/env";
 export default {
   head() {
     return {
-      title: "Carlos C. | Front-end",
+      title: "CCDEV*",
       noscript: [{ innerHTML: "Body No Scripts", body: true }],
       meta: [
         {
@@ -45,7 +45,7 @@ export default {
     // Barra de progreso de carga
     this.$nextTick(() => {
       this.$nuxt.$loading.start();
-      setTimeout(() => this.$nuxt.$loading.finish(), 3000);
+      setTimeout(() => this.$nuxt.$loading.finish(), 2000);
     });
   }
 };

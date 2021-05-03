@@ -7,7 +7,7 @@
       <div class="services__contenedor--lista ">
         <div
           class="services__contenedor--item"
-          data-aos="zoom-out-left"
+          data-aos="fade-left"
           v-for="(thing, index) in things"
           :key="index"
         >

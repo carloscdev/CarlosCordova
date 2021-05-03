@@ -3,10 +3,6 @@
     <div class="experience__contenedor contenedor espacio">
       <div
         class="experience__contenedor--lista sombra"
-        data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="300"
-        data-aos-offset="0"
       >
         <h3>
           <span class="number color-rojo">01</span>
@@ -19,10 +15,6 @@
       </div>
       <div
         class="experience__contenedor--lista sombra"
-        data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="300"
-        data-aos-offset="0"
       >
         <h3>
           <span class="number color-rojo">02</span>
@@ -35,10 +27,6 @@
       </div>
       <div
         class="experience__contenedor--lista sombra"
-        data-aos="fade-zoom-in"
-        data-aos-easing="ease-in-back"
-        data-aos-delay="300"
-        data-aos-offset="0"
       >
         <h3>
           <span class="number color-rojo">03</span>

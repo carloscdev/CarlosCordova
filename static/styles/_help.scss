@@ -1,0 +1,10 @@
+.help {
+  text-align: center;
+  &__contenedor {
+    padding: var(--margen-grande) 0;
+    .btn-primary {
+      margin: 0 auto;
+      margin-top: var(--margen-minimo);
+    }
+  }
+}

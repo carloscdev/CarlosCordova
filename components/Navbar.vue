@@ -65,7 +65,7 @@
           </nuxt-link>
         </li>
         <li @click.prevent="closeMenu">
-          <nuxt-link to="/tutorials">
+          <nuxt-link to="/tutoriales">
             <div class="itemNav">Tutoriales</div>
           </nuxt-link>
         </li>
